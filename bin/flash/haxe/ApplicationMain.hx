@@ -199,7 +199,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "144",
+			build: "137",
 			company: "Your name here",
 			file: "drawingimages",
 			fps: 60,
@@ -216,7 +216,7 @@ class ApplicationMain {
 					depthBuffer: false,
 					display: 0,
 					fullscreen: false,
-					hardware: false,
+					hardware: true,
 					height: 480,
 					parameters: "{}",
 					resizable: true,

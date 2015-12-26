@@ -224,7 +224,14 @@ class Text {
 		}
 		return 0;
 	}
-	
+	public static function ttfheight(t:String):Float {
+		if (typeface[currentindex].type == "ttf") {
+			typeface[currentindex].tf_ttf.text = t;
+			return typeface[currentindex].tf_ttf.textHeight;
+		}
+		return 0;
+	}
+
 	public static function height():Float {
 		if (typeface[currentindex].type == "ttf") {
 			var oldtext:String = typeface[currentindex].tf_ttf.text;

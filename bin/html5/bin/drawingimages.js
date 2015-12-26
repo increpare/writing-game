@@ -57,6 +57,8 @@ ApplicationMain.create = function() {
 	types.push("IMAGE");
 	urls.push("data/graphics/bookpillar.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/brush.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/fg.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/firepit.png");
@@ -97,7 +99,7 @@ ApplicationMain.init = function() {
 	if(total == 0) ApplicationMain.start();
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "81", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
+	ApplicationMain.config = { build : "144", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -1654,6 +1656,9 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/bookpillar.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/brush.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/fg.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
@@ -2037,10 +2042,13 @@ _$List_ListIterator.prototype = {
 	,__class__: _$List_ListIterator
 };
 var Main = function() {
+	this.t = 0;
 	this.initbookpause = 5;
 	this.bookanimspeed = 1;
 	this.bookframe = 0;
-	this.showbook = true;
+	this.showtextframe = 0;
+	this.showtext = "The second coming is nigh!";
+	this.showbook = false;
 	this.dy = 0;
 	this.dx = 0;
 	this.brushgy = 8;
@@ -2052,12 +2060,10 @@ var Main = function() {
 	this.tilemap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 	this.gridh = 25;
 	this.gridw = 9;
-	this.cellh = 19;
-	this.cellw = 28;
-	this.py = 437;
+	this.py = 247;
 	this.px = 112;
-	this.cellwmid = haxegon_Convert.toint(this.cellw / 2);
-	this.cellhmid = haxegon_Convert.toint(this.cellh / 2);
+	this.cellwmid = haxegon_Convert.toint(14.);
+	this.cellhmid = haxegon_Convert.toint(9.5);
 	haxegon_Gfx.resizescreen(252,228);
 	haxegon_Gfx.loadimage("bgtiles");
 	haxegon_Gfx.loadimage("book_blank_l");
@@ -2072,6 +2078,7 @@ var Main = function() {
 	haxegon_Gfx.loadimage("book_scored_r");
 	haxegon_Gfx.loadimage("bookframe");
 	haxegon_Gfx.loadimage("bookpillar");
+	haxegon_Gfx.loadimage("brush");
 	haxegon_Gfx.loadimage("fg");
 	haxegon_Gfx.loadimage("firepit");
 	haxegon_Gfx.loadimage("firepit2");
@@ -2087,8 +2094,8 @@ var Main = function() {
 	this.ph = haxegon_Gfx.imageheight("player");
 	this.pwmid = haxegon_Convert.toint(this.pw / 2);
 	this.phmid = haxegon_Convert.toint(this.ph / 2);
-	this.poffsetx = haxegon_Convert.toint(this.cellw / 2 - this.pwmid);
-	this.poffsety = haxegon_Convert.toint(this.cellh - this.ph - this.phmid + 1);
+	this.poffsetx = haxegon_Convert.toint(14. - this.pwmid);
+	this.poffsety = haxegon_Convert.toint(19 - this.ph - this.phmid + 1);
 	this.screenw = 252;
 	this.screenh = 228;
 	haxegon_Gfx.showfps = true;
@@ -2097,7 +2104,7 @@ $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
 Main.prototype = {
 	checkCollision: function(tx,ty) {
-		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 112, className : "Main", methodName : "checkCollision"});
+		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 114, className : "Main", methodName : "checkCollision"});
 		if(tx < 0 || tx >= this.gridw || ty < 0 || ty >= this.gridh || this.tilemap[tx + this.gridw * ty] == 1) {
 			this.dx = 0;
 			this.dy = 0;
@@ -2116,7 +2123,7 @@ Main.prototype = {
 		if(f2 > 1) {
 			var f3 = f2 - 1;
 			if(f3 > 1) f3 = 1;
-			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 142, className : "Main", methodName : "DrawBook"});
+			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 146, className : "Main", methodName : "DrawBook"});
 			var lpagew = haxegon_Gfx.imagewidth("book_default_l");
 			var lpagewmid = haxegon_Convert.toint(lpagew / 2);
 			var bookoffset2 = f3 * lpagewmid;
@@ -2133,17 +2140,36 @@ Main.prototype = {
 		this.initbookpause--;
 		if(this.initbookpause <= 0) this.bookframe++;
 	}
+	,DrawTextBox: function() {
+		var s = this.showtext;
+		var height = 10;
+		haxegon_Text.changesize(height);
+		var width = haxegon_Convert.toint(haxegon_Text.len(s));
+		var margin = 2;
+		this.showtextframe++;
+		if(this.showtextframe < 15) {
+			width = haxegon_Convert.toint(haxegon_Convert.tofloat(width * this.showtextframe) / 15);
+			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
+			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
+		} else {
+			haxegon_Text.align(haxegon_Text.CENTER);
+			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
+			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
+			haxegon_Text.display(haxegon_Gfx.screenwidthmid - margin,haxegon_Gfx.screenheightmid - height,s);
+		}
+	}
 	,update: function() {
-		var tx = haxegon_Convert.toint(this.px / this.cellw);
-		var ty = haxegon_Convert.toint(this.py / this.cellh);
+		this.t++;
+		var tx = haxegon_Convert.toint(this.px / 28);
+		var ty = haxegon_Convert.toint(this.py / 19);
 		var frame = 0;
-		if(this.px % this.cellw != 0 || this.py % this.cellh > 1) {
+		if(this.px % 28 != 0 || this.py % 19 > 1) {
 			frame = haxegon_Convert.toint((this.px + this.py) / 10) % 2;
 			frame++;
 		}
-		if(this.px % this.cellw == 0) this.dx = 0;
-		if(this.py % this.cellh == 0 || this.py % this.cellh == 1) this.dy = 0;
-		if(this.px % this.cellw == 0 && (this.py % this.cellh == 0 || this.py % this.cellh == 1)) {
+		if(this.px % 28 == 0) this.dx = 0;
+		if(this.py % 19 == 0 || this.py % 19 == 1) this.dy = 0;
+		if(this.px % 28 == 0 && (this.py % 19 == 0 || this.py % 19 == 1)) {
 			if(haxegon_Input.pressed(haxegon_Key.UP)) {
 				this.dy = -1;
 				if(this.checkCollision(tx,--ty)) ty++;
@@ -2168,8 +2194,18 @@ Main.prototype = {
 		if(-offy > maxoffy) offy = -maxoffy;
 		haxegon_Gfx.drawimage(0,offy,"bgtiles");
 		haxegon_Gfx.drawimage(0,offy,"fg");
+		haxegon_Gfx.drawimage(180,133 + offy,"brush");
+		if(this.t / 10 % 2 < 1) {
+			haxegon_Gfx.drawimage(85,77 + offy,"waterpit");
+			haxegon_Gfx.drawimage(141,71 + offy,"firepit");
+		} else {
+			haxegon_Gfx.drawimage(85,77 + offy,"waterpit2");
+			haxegon_Gfx.drawimage(141,71 + offy,"firepit2");
+		}
 		if(frame == 0) haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"player"); else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"playerwalk" + frame);
+		haxegon_Gfx.drawimage(122,107 + offy,"bookpillar");
 		if(this.showbook) this.DrawBook();
+		if(this.showtext.length > 0) this.DrawTextBox();
 	}
 	,__class__: Main
 };
@@ -6440,6 +6476,13 @@ haxegon_Text.len = function(t) {
 			if(thislength > longestline) longestline = thislength;
 		} else longestline = haxegon_Convert.toint(haxegon_Text.typeface[haxegon_Text.currentindex].tf_bitmap.getStringWidth(text,false));
 		return longestline;
+	}
+	return 0;
+};
+haxegon_Text.ttfheight = function(t) {
+	if(haxegon_Text.typeface[haxegon_Text.currentindex].type == "ttf") {
+		haxegon_Text.typeface[haxegon_Text.currentindex].tf_ttf.set_text(t);
+		return haxegon_Text.typeface[haxegon_Text.currentindex].tf_ttf.get_textHeight();
 	}
 	return 0;
 };
@@ -40360,6 +40403,8 @@ openfl_display_DisplayObject.__worldRenderDirty = 0;
 openfl_display_DisplayObject.__worldTransformDirty = 0;
 openfl_display_DisplayObject.__cacheAsBitmapMode = false;
 openfl_text_Font.__registeredFonts = [];
+Main.cellw = 28;
+Main.cellh = 19;
 Xml.Element = 0;
 Xml.PCData = 1;
 Xml.CData = 2;

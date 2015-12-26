@@ -992,10 +992,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 #if !display
 #if flash
 
-@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_eot extends null { }
-@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends null { }
-@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff extends null { }
-@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends null { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_eot extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends flash.text.Font { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff extends flash.utils.ByteArray { }
+@:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends flash.utils.ByteArray { }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_bgtiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }

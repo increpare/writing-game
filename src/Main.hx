@@ -1,11 +1,12 @@
 import haxegon.*;
 
 class Main {
-	var px:Int=112;
-	var py:Int=437;
+	static inline var cellw = 28;
+	static inline var cellh = 19;
 
-	var cellw = 28;
-	var cellh = 19;
+	var px:Int=cellw*4;
+	var py:Int=cellh*13;
+
 	var cellwmid:Int;
 	var cellhmid:Int;
 
@@ -85,6 +86,7 @@ class Main {
 		Gfx.loadimage("book_scored_r");
 		Gfx.loadimage("bookframe");
 		Gfx.loadimage("bookpillar");
+		Gfx.loadimage("brush");
 		Gfx.loadimage("fg");
 		Gfx.loadimage("firepit");
 		Gfx.loadimage("firepit2");
@@ -118,7 +120,9 @@ class Main {
 	  	return false;
 	}
 
-  var showbook:Bool=true;
+  var showbook:Bool=false;
+  var showtext:String="The second coming is nigh!";
+  var showtextframe:Int=0;
   var bookframe:Int=0;
   var bookanimspeed = 1;  
   var initbookpause=5;
@@ -165,7 +169,30 @@ class Main {
   	
   }
 
+  function DrawTextBox(){
+  	var s = showtext;
+
+	var height = 10;
+ 	Text.changesize(height);
+  	var width = Convert.toint(Text.len(s));  	
+	var margin=2;
+  	showtextframe++;
+
+  	if (showtextframe<15) {
+  		width = Convert.toint(Convert.tofloat(width*showtextframe)/15);
+	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
+	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
+  	} else {
+	  	Text.align(Text.CENTER);
+	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
+	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
+	  	Text.display(Gfx.screenwidthmid-margin,Gfx.screenheightmid-height,s);
+	  }
+  }
+
+	var t:Int=0;
   function update() {
+  	t++;
   	var tx=Convert.toint(px/cellw);
   	var ty=Convert.toint(py/cellh);
   	var frame=0;
@@ -217,14 +244,29 @@ class Main {
   	}
   	Gfx.drawimage(0,offy,"bgtiles");
   	Gfx.drawimage(0,offy,"fg");
+
+  	Gfx.drawimage(180,133+offy,"brush");
+  	if ((t/10)%2<1){
+  		Gfx.drawimage(85,77+offy,"waterpit");
+  		Gfx.drawimage(141,71+offy,"firepit");
+  	} else {
+  		Gfx.drawimage(85,77+offy,"waterpit2");  		
+  		Gfx.drawimage(141,71+offy,"firepit2");
+  	}
   	if (frame==0){
   		Gfx.drawimage(px+poffsetx,py+poffsety+offy,"player");
   	} else {
   		Gfx.drawimage(px+poffsetx,py+poffsety+offy,"playerwalk"+frame);
   	}
 
+	Gfx.drawimage(122,107+offy,"bookpillar");
+
+
   if (showbook){
   	DrawBook();
+  }
+  if (showtext.length>0){
+  	DrawTextBox();
   }
   }
 
