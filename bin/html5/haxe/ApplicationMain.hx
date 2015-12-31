@@ -94,10 +94,6 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("data/graphics/bookpillar.png");
-		types.push (lime.Assets.AssetType.IMAGE);
-		
-		
 		urls.push ("data/graphics/brush.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -111,6 +107,22 @@ class ApplicationMain {
 		
 		
 		urls.push ("data/graphics/firepit2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_drop.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_paint.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_read.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_take.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -199,7 +211,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "144",
+			build: "155",
 			company: "Your name here",
 			file: "drawingimages",
 			fps: 60,

@@ -4,50 +4,50 @@ class Main {
 	static inline var cellw = 28;
 	static inline var cellh = 19;
 
-	var px:Int=cellw*4;
+	var px:Int=cellw*5;
 	var py:Int=cellh*13;
 
 	var cellwmid:Int;
 	var cellhmid:Int;
 
-	var gridw = 9;
+	var gridw = 11;
 	var gridh = 25;
 
 	var tilemap:Array<Int> = [
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,1,1, 1,1,1, 1,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,0, 0,0,0, 0,1,0,
-		0,1,1, 1,0,1, 1,1,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 1,0,1, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 1,0,1, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 1,0,1, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
-		0,0,0, 0,0,0, 0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,1,1,1, 1,1,1, 1,1,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,1,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,0,0, 0,0,0, 0,0,1,0,
+		0,1,1,1, 1,0,1, 1,1,1,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 1,0,1, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 1,0,1, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 1,0,1, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
+		0,0,0,0, 0,0,0, 0,0,0,0,
 	];
 
-	var firegx=3;
+	var firegx=4;
 	var firegy=4;
 
-	var watergx=4;
+	var watergx=5;
 	var watergy=6;
 
-	var brushgx=6;
+	var brushgx=7;
 	var brushgy=8;
 
 	var maph:Int;
@@ -72,7 +72,7 @@ class Main {
 	function new() {
 		cellwmid=Convert.toint(cellw/2);
 		cellhmid=Convert.toint(cellh/2);
-		Gfx.resizescreen(252,228);	
+		Gfx.resizescreen(308,228);	
 		Gfx.loadimage("bgtiles");
 		Gfx.loadimage("book_blank_l");
 		Gfx.loadimage("book_blank_r");
@@ -85,7 +85,6 @@ class Main {
 		Gfx.loadimage("book_scored_l");
 		Gfx.loadimage("book_scored_r");
 		Gfx.loadimage("bookframe");
-		Gfx.loadimage("bookpillar");
 		Gfx.loadimage("brush");
 		Gfx.loadimage("fg");
 		Gfx.loadimage("firepit");
@@ -121,7 +120,7 @@ class Main {
 	}
 
   var showbook:Bool=false;
-  var showtext:String="The second coming is nigh!";
+  var showtext:String="";
   var showtextframe:Int=0;
   var bookframe:Int=0;
   var bookanimspeed = 1;  
@@ -245,13 +244,13 @@ class Main {
   	Gfx.drawimage(0,offy,"bgtiles");
   	Gfx.drawimage(0,offy,"fg");
 
-  	Gfx.drawimage(180,133+offy,"brush");
+  	Gfx.drawimage(179+28*2,134+2*19+offy,"brush");
   	if ((t/10)%2<1){
   		Gfx.drawimage(85,77+offy,"waterpit");
-  		Gfx.drawimage(141,71+offy,"firepit");
+  		Gfx.drawimage(141+2*28,71+offy,"firepit");
   	} else {
   		Gfx.drawimage(85,77+offy,"waterpit2");  		
-  		Gfx.drawimage(141,71+offy,"firepit2");
+  		Gfx.drawimage(141+2*28,71+offy,"firepit2");
   	}
   	if (frame==0){
   		Gfx.drawimage(px+poffsetx,py+poffsety+offy,"player");
@@ -259,7 +258,7 @@ class Main {
   		Gfx.drawimage(px+poffsetx,py+poffsety+offy,"playerwalk"+frame);
   	}
 
-	Gfx.drawimage(122,107+offy,"bookpillar");
+	Gfx.drawimage(122+28,106+19+offy,"smallbook");
 
 
   if (showbook){

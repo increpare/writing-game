@@ -79,6 +79,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
 		#end
 		
 		#if flash
@@ -115,8 +118,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/graphics/book_scored_r.png", AssetType.IMAGE);
 		className.set ("data/graphics/bookframe.png", __ASSET__data_graphics_bookframe_png);
 		type.set ("data/graphics/bookframe.png", AssetType.IMAGE);
-		className.set ("data/graphics/bookpillar.png", __ASSET__data_graphics_bookpillar_png);
-		type.set ("data/graphics/bookpillar.png", AssetType.IMAGE);
 		className.set ("data/graphics/brush.png", __ASSET__data_graphics_brush_png);
 		type.set ("data/graphics/brush.png", AssetType.IMAGE);
 		className.set ("data/graphics/fg.png", __ASSET__data_graphics_fg_png);
@@ -125,6 +126,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/graphics/firepit.png", AssetType.IMAGE);
 		className.set ("data/graphics/firepit2.png", __ASSET__data_graphics_firepit2_png);
 		type.set ("data/graphics/firepit2.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_drop.png", __ASSET__data_graphics_icon_drop_png);
+		type.set ("data/graphics/icon_drop.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_paint.png", __ASSET__data_graphics_icon_paint_png);
+		type.set ("data/graphics/icon_paint.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_read.png", __ASSET__data_graphics_icon_read_png);
+		type.set ("data/graphics/icon_read.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
+		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
 		className.set ("data/graphics/player.png", __ASSET__data_graphics_player_png);
 		type.set ("data/graphics/player.png", AssetType.IMAGE);
 		className.set ("data/graphics/playerwalk1.png", __ASSET__data_graphics_playerwalk1_png);
@@ -206,10 +215,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "data/graphics/bookpillar.png";
-		path.set (id, id);
-		
-		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/brush.png";
 		path.set (id, id);
 		
@@ -223,6 +228,22 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/firepit2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_drop.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_paint.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_read.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_take.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -316,9 +337,6 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/bookframe.png", __ASSET__data_graphics_bookframe_png);
 		type.set ("data/graphics/bookframe.png", AssetType.IMAGE);
 		
-		className.set ("data/graphics/bookpillar.png", __ASSET__data_graphics_bookpillar_png);
-		type.set ("data/graphics/bookpillar.png", AssetType.IMAGE);
-		
 		className.set ("data/graphics/brush.png", __ASSET__data_graphics_brush_png);
 		type.set ("data/graphics/brush.png", AssetType.IMAGE);
 		
@@ -330,6 +348,18 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("data/graphics/firepit2.png", __ASSET__data_graphics_firepit2_png);
 		type.set ("data/graphics/firepit2.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_drop.png", __ASSET__data_graphics_icon_drop_png);
+		type.set ("data/graphics/icon_drop.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_paint.png", __ASSET__data_graphics_icon_paint_png);
+		type.set ("data/graphics/icon_paint.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_read.png", __ASSET__data_graphics_icon_read_png);
+		type.set ("data/graphics/icon_read.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
+		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/player.png", __ASSET__data_graphics_player_png);
 		type.set ("data/graphics/player.png", AssetType.IMAGE);
@@ -1008,11 +1038,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_bookframe_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__data_graphics_bookpillar_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_brush_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_firepit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_firepit2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_drop_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_paint_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_read_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_take_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_playerwalk1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_playerwalk2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1025,6 +1058,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends lime.text.Font { public function new () { super (); name = "Open Sans"; } } 
+
+
+
 
 
 
@@ -1075,11 +1111,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("data/graphics/book_scored_l.png") #if display private #end class __ASSET__data_graphics_book_scored_l_png extends lime.graphics.Image {}
 @:image("data/graphics/book_scored_r.png") #if display private #end class __ASSET__data_graphics_book_scored_r_png extends lime.graphics.Image {}
 @:image("data/graphics/bookframe.png") #if display private #end class __ASSET__data_graphics_bookframe_png extends lime.graphics.Image {}
-@:image("data/graphics/bookpillar.png") #if display private #end class __ASSET__data_graphics_bookpillar_png extends lime.graphics.Image {}
 @:image("data/graphics/brush.png") #if display private #end class __ASSET__data_graphics_brush_png extends lime.graphics.Image {}
 @:image("data/graphics/fg.png") #if display private #end class __ASSET__data_graphics_fg_png extends lime.graphics.Image {}
 @:image("data/graphics/firepit.png") #if display private #end class __ASSET__data_graphics_firepit_png extends lime.graphics.Image {}
 @:image("data/graphics/firepit2.png") #if display private #end class __ASSET__data_graphics_firepit2_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_drop.png") #if display private #end class __ASSET__data_graphics_icon_drop_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_paint.png") #if display private #end class __ASSET__data_graphics_icon_paint_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_read.png") #if display private #end class __ASSET__data_graphics_icon_read_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_take.png") #if display private #end class __ASSET__data_graphics_icon_take_png extends lime.graphics.Image {}
 @:image("data/graphics/player.png") #if display private #end class __ASSET__data_graphics_player_png extends lime.graphics.Image {}
 @:image("data/graphics/playerwalk1.png") #if display private #end class __ASSET__data_graphics_playerwalk1_png extends lime.graphics.Image {}
 @:image("data/graphics/playerwalk2.png") #if display private #end class __ASSET__data_graphics_playerwalk2_png extends lime.graphics.Image {}

@@ -55,8 +55,6 @@ ApplicationMain.create = function() {
 	types.push("IMAGE");
 	urls.push("data/graphics/bookframe.png");
 	types.push("IMAGE");
-	urls.push("data/graphics/bookpillar.png");
-	types.push("IMAGE");
 	urls.push("data/graphics/brush.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/fg.png");
@@ -64,6 +62,14 @@ ApplicationMain.create = function() {
 	urls.push("data/graphics/firepit.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/firepit2.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_drop.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_paint.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_read.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_take.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/player.png");
 	types.push("IMAGE");
@@ -99,7 +105,7 @@ ApplicationMain.init = function() {
 	if(total == 0) ApplicationMain.start();
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "144", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
+	ApplicationMain.config = { build : "155", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -1653,9 +1659,6 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/bookframe.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
-	id = "data/graphics/bookpillar.png";
-	this.path.set(id,id);
-	this.type.set(id,"IMAGE");
 	id = "data/graphics/brush.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
@@ -1666,6 +1669,18 @@ var DefaultAssetLibrary = function() {
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/firepit2.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_drop.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_paint.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_read.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_take.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/player.png";
@@ -2047,24 +2062,24 @@ var Main = function() {
 	this.bookanimspeed = 1;
 	this.bookframe = 0;
 	this.showtextframe = 0;
-	this.showtext = "The second coming is nigh!";
+	this.showtext = "";
 	this.showbook = false;
 	this.dy = 0;
 	this.dx = 0;
 	this.brushgy = 8;
-	this.brushgx = 6;
+	this.brushgx = 7;
 	this.watergy = 6;
-	this.watergx = 4;
+	this.watergx = 5;
 	this.firegy = 4;
-	this.firegx = 3;
-	this.tilemap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,0,0,0,0,0,1,0,0,1,1,1,0,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	this.firegx = 4;
+	this.tilemap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
 	this.gridh = 25;
-	this.gridw = 9;
+	this.gridw = 11;
 	this.py = 247;
-	this.px = 112;
+	this.px = 140;
 	this.cellwmid = haxegon_Convert.toint(14.);
 	this.cellhmid = haxegon_Convert.toint(9.5);
-	haxegon_Gfx.resizescreen(252,228);
+	haxegon_Gfx.resizescreen(308,228);
 	haxegon_Gfx.loadimage("bgtiles");
 	haxegon_Gfx.loadimage("book_blank_l");
 	haxegon_Gfx.loadimage("book_blank_r");
@@ -2077,7 +2092,6 @@ var Main = function() {
 	haxegon_Gfx.loadimage("book_scored_l");
 	haxegon_Gfx.loadimage("book_scored_r");
 	haxegon_Gfx.loadimage("bookframe");
-	haxegon_Gfx.loadimage("bookpillar");
 	haxegon_Gfx.loadimage("brush");
 	haxegon_Gfx.loadimage("fg");
 	haxegon_Gfx.loadimage("firepit");
@@ -2104,7 +2118,7 @@ $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
 Main.prototype = {
 	checkCollision: function(tx,ty) {
-		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 114, className : "Main", methodName : "checkCollision"});
+		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 113, className : "Main", methodName : "checkCollision"});
 		if(tx < 0 || tx >= this.gridw || ty < 0 || ty >= this.gridh || this.tilemap[tx + this.gridw * ty] == 1) {
 			this.dx = 0;
 			this.dy = 0;
@@ -2123,7 +2137,7 @@ Main.prototype = {
 		if(f2 > 1) {
 			var f3 = f2 - 1;
 			if(f3 > 1) f3 = 1;
-			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 146, className : "Main", methodName : "DrawBook"});
+			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 145, className : "Main", methodName : "DrawBook"});
 			var lpagew = haxegon_Gfx.imagewidth("book_default_l");
 			var lpagewmid = haxegon_Convert.toint(lpagew / 2);
 			var bookoffset2 = f3 * lpagewmid;
@@ -2194,16 +2208,16 @@ Main.prototype = {
 		if(-offy > maxoffy) offy = -maxoffy;
 		haxegon_Gfx.drawimage(0,offy,"bgtiles");
 		haxegon_Gfx.drawimage(0,offy,"fg");
-		haxegon_Gfx.drawimage(180,133 + offy,"brush");
+		haxegon_Gfx.drawimage(235,172 + offy,"brush");
 		if(this.t / 10 % 2 < 1) {
 			haxegon_Gfx.drawimage(85,77 + offy,"waterpit");
-			haxegon_Gfx.drawimage(141,71 + offy,"firepit");
+			haxegon_Gfx.drawimage(197,71 + offy,"firepit");
 		} else {
 			haxegon_Gfx.drawimage(85,77 + offy,"waterpit2");
-			haxegon_Gfx.drawimage(141,71 + offy,"firepit2");
+			haxegon_Gfx.drawimage(197,71 + offy,"firepit2");
 		}
 		if(frame == 0) haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"player"); else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"playerwalk" + frame);
-		haxegon_Gfx.drawimage(122,107 + offy,"bookpillar");
+		haxegon_Gfx.drawimage(150,125 + offy,"smallbook");
 		if(this.showbook) this.DrawBook();
 		if(this.showtext.length > 0) this.DrawTextBox();
 	}
