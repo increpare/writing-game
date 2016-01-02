@@ -82,6 +82,60 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
 		#end
 		
 		#if flash
@@ -98,42 +152,146 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/graphics/bgtiles.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_blank_l.png", __ASSET__data_graphics_book_blank_l_png);
 		type.set ("data/graphics/book_blank_l.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_blank_l_stepped.png", __ASSET__data_graphics_book_blank_l_stepped_png);
+		type.set ("data/graphics/book_blank_l_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_blank_r.png", __ASSET__data_graphics_book_blank_r_png);
 		type.set ("data/graphics/book_blank_r.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_blank_r_stepped.png", __ASSET__data_graphics_book_blank_r_stepped_png);
+		type.set ("data/graphics/book_blank_r_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_cover.png", __ASSET__data_graphics_book_cover_png);
 		type.set ("data/graphics/book_cover.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_covermask.png", __ASSET__data_graphics_book_covermask_png);
 		type.set ("data/graphics/book_covermask.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_default_l.png", __ASSET__data_graphics_book_default_l_png);
 		type.set ("data/graphics/book_default_l.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_default_l_stepped.png", __ASSET__data_graphics_book_default_l_stepped_png);
+		type.set ("data/graphics/book_default_l_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_default_r.png", __ASSET__data_graphics_book_default_r_png);
 		type.set ("data/graphics/book_default_r.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_default_r_stepped.png", __ASSET__data_graphics_book_default_r_stepped_png);
+		type.set ("data/graphics/book_default_r_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_rewritten_l.png", __ASSET__data_graphics_book_rewritten_l_png);
 		type.set ("data/graphics/book_rewritten_l.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_rewritten_l_stepped.png", __ASSET__data_graphics_book_rewritten_l_stepped_png);
+		type.set ("data/graphics/book_rewritten_l_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_rewritten_r.png", __ASSET__data_graphics_book_rewritten_r_png);
 		type.set ("data/graphics/book_rewritten_r.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_rewritten_r_stepped.png", __ASSET__data_graphics_book_rewritten_r_stepped_png);
+		type.set ("data/graphics/book_rewritten_r_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_scored_l.png", __ASSET__data_graphics_book_scored_l_png);
 		type.set ("data/graphics/book_scored_l.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_scored_l_stepped.png", __ASSET__data_graphics_book_scored_l_stepped_png);
+		type.set ("data/graphics/book_scored_l_stepped.png", AssetType.IMAGE);
 		className.set ("data/graphics/book_scored_r.png", __ASSET__data_graphics_book_scored_r_png);
 		type.set ("data/graphics/book_scored_r.png", AssetType.IMAGE);
+		className.set ("data/graphics/book_scored_r_stepped.png", __ASSET__data_graphics_book_scored_r_stepped_png);
+		type.set ("data/graphics/book_scored_r_stepped.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_0.png", __ASSET__data_graphics_bookanim_0_png);
+		type.set ("data/graphics/bookanim_0.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_1.png", __ASSET__data_graphics_bookanim_1_png);
+		type.set ("data/graphics/bookanim_1.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_2.png", __ASSET__data_graphics_bookanim_2_png);
+		type.set ("data/graphics/bookanim_2.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_3.png", __ASSET__data_graphics_bookanim_3_png);
+		type.set ("data/graphics/bookanim_3.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_4.png", __ASSET__data_graphics_bookanim_4_png);
+		type.set ("data/graphics/bookanim_4.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_5.png", __ASSET__data_graphics_bookanim_5_png);
+		type.set ("data/graphics/bookanim_5.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_6.png", __ASSET__data_graphics_bookanim_6_png);
+		type.set ("data/graphics/bookanim_6.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_7.png", __ASSET__data_graphics_bookanim_7_png);
+		type.set ("data/graphics/bookanim_7.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_8.png", __ASSET__data_graphics_bookanim_8_png);
+		type.set ("data/graphics/bookanim_8.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookanim_9.png", __ASSET__data_graphics_bookanim_9_png);
+		type.set ("data/graphics/bookanim_9.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_0.png", __ASSET__data_graphics_bookburn_book_burn_0_png);
+		type.set ("data/graphics/bookburn/book_burn_0.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_1.png", __ASSET__data_graphics_bookburn_book_burn_1_png);
+		type.set ("data/graphics/bookburn/book_burn_1.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_2.png", __ASSET__data_graphics_bookburn_book_burn_2_png);
+		type.set ("data/graphics/bookburn/book_burn_2.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_3.png", __ASSET__data_graphics_bookburn_book_burn_3_png);
+		type.set ("data/graphics/bookburn/book_burn_3.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_4.png", __ASSET__data_graphics_bookburn_book_burn_4_png);
+		type.set ("data/graphics/bookburn/book_burn_4.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_5.png", __ASSET__data_graphics_bookburn_book_burn_5_png);
+		type.set ("data/graphics/bookburn/book_burn_5.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_6.png", __ASSET__data_graphics_bookburn_book_burn_6_png);
+		type.set ("data/graphics/bookburn/book_burn_6.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_7.png", __ASSET__data_graphics_bookburn_book_burn_7_png);
+		type.set ("data/graphics/bookburn/book_burn_7.png", AssetType.IMAGE);
+		className.set ("data/graphics/bookburn/book_burn_8.png", __ASSET__data_graphics_bookburn_book_burn_8_png);
+		type.set ("data/graphics/bookburn/book_burn_8.png", AssetType.IMAGE);
 		className.set ("data/graphics/bookframe.png", __ASSET__data_graphics_bookframe_png);
 		type.set ("data/graphics/bookframe.png", AssetType.IMAGE);
 		className.set ("data/graphics/brush.png", __ASSET__data_graphics_brush_png);
 		type.set ("data/graphics/brush.png", AssetType.IMAGE);
-		className.set ("data/graphics/fg.png", __ASSET__data_graphics_fg_png);
-		type.set ("data/graphics/fg.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_0.png", __ASSET__data_graphics_burn_player_burn_0_png);
+		type.set ("data/graphics/burn/player_burn_0.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_1.png", __ASSET__data_graphics_burn_player_burn_1_png);
+		type.set ("data/graphics/burn/player_burn_1.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_10.png", __ASSET__data_graphics_burn_player_burn_10_png);
+		type.set ("data/graphics/burn/player_burn_10.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_11.png", __ASSET__data_graphics_burn_player_burn_11_png);
+		type.set ("data/graphics/burn/player_burn_11.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_12.png", __ASSET__data_graphics_burn_player_burn_12_png);
+		type.set ("data/graphics/burn/player_burn_12.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_13.png", __ASSET__data_graphics_burn_player_burn_13_png);
+		type.set ("data/graphics/burn/player_burn_13.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_14.png", __ASSET__data_graphics_burn_player_burn_14_png);
+		type.set ("data/graphics/burn/player_burn_14.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_15.png", __ASSET__data_graphics_burn_player_burn_15_png);
+		type.set ("data/graphics/burn/player_burn_15.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_16.png", __ASSET__data_graphics_burn_player_burn_16_png);
+		type.set ("data/graphics/burn/player_burn_16.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_2.png", __ASSET__data_graphics_burn_player_burn_2_png);
+		type.set ("data/graphics/burn/player_burn_2.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_3.png", __ASSET__data_graphics_burn_player_burn_3_png);
+		type.set ("data/graphics/burn/player_burn_3.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_4.png", __ASSET__data_graphics_burn_player_burn_4_png);
+		type.set ("data/graphics/burn/player_burn_4.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_5.png", __ASSET__data_graphics_burn_player_burn_5_png);
+		type.set ("data/graphics/burn/player_burn_5.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_6.png", __ASSET__data_graphics_burn_player_burn_6_png);
+		type.set ("data/graphics/burn/player_burn_6.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_7.png", __ASSET__data_graphics_burn_player_burn_7_png);
+		type.set ("data/graphics/burn/player_burn_7.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_8.png", __ASSET__data_graphics_burn_player_burn_8_png);
+		type.set ("data/graphics/burn/player_burn_8.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_9.png", __ASSET__data_graphics_burn_player_burn_9_png);
+		type.set ("data/graphics/burn/player_burn_9.png", AssetType.IMAGE);
+		className.set ("data/graphics/fg_0.png", __ASSET__data_graphics_fg_0_png);
+		type.set ("data/graphics/fg_0.png", AssetType.IMAGE);
+		className.set ("data/graphics/fg_1.png", __ASSET__data_graphics_fg_1_png);
+		type.set ("data/graphics/fg_1.png", AssetType.IMAGE);
+		className.set ("data/graphics/fg_2.png", __ASSET__data_graphics_fg_2_png);
+		type.set ("data/graphics/fg_2.png", AssetType.IMAGE);
 		className.set ("data/graphics/firepit.png", __ASSET__data_graphics_firepit_png);
 		type.set ("data/graphics/firepit.png", AssetType.IMAGE);
 		className.set ("data/graphics/firepit2.png", __ASSET__data_graphics_firepit2_png);
 		type.set ("data/graphics/firepit2.png", AssetType.IMAGE);
+		className.set ("data/graphics/firepit2_fg.png", __ASSET__data_graphics_firepit2_fg_png);
+		type.set ("data/graphics/firepit2_fg.png", AssetType.IMAGE);
+		className.set ("data/graphics/firepit_fg.png", __ASSET__data_graphics_firepit_fg_png);
+		type.set ("data/graphics/firepit_fg.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_drop.png", __ASSET__data_graphics_icon_drop_png);
 		type.set ("data/graphics/icon_drop.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_exit.png", __ASSET__data_graphics_icon_exit_png);
+		type.set ("data/graphics/icon_exit.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_paint.png", __ASSET__data_graphics_icon_paint_png);
 		type.set ("data/graphics/icon_paint.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_read.png", __ASSET__data_graphics_icon_read_png);
 		type.set ("data/graphics/icon_read.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_steps.png", __ASSET__data_graphics_icon_steps_png);
+		type.set ("data/graphics/icon_steps.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
 		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_unlock.png", __ASSET__data_graphics_icon_unlock_png);
+		type.set ("data/graphics/icon_unlock.png", AssetType.IMAGE);
+		className.set ("data/graphics/key.png", __ASSET__data_graphics_key_png);
+		type.set ("data/graphics/key.png", AssetType.IMAGE);
 		className.set ("data/graphics/player.png", __ASSET__data_graphics_player_png);
 		type.set ("data/graphics/player.png", AssetType.IMAGE);
 		className.set ("data/graphics/playerwalk1.png", __ASSET__data_graphics_playerwalk1_png);
@@ -146,6 +304,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/graphics/waterpit.png", AssetType.IMAGE);
 		className.set ("data/graphics/waterpit2.png", __ASSET__data_graphics_waterpit2_png);
 		type.set ("data/graphics/waterpit2.png", AssetType.IMAGE);
+		className.set ("data/graphics/waterpit2_fg.png", __ASSET__data_graphics_waterpit2_fg_png);
+		type.set ("data/graphics/waterpit2_fg.png", AssetType.IMAGE);
+		className.set ("data/graphics/waterpit_fg.png", __ASSET__data_graphics_waterpit_fg_png);
+		type.set ("data/graphics/waterpit_fg.png", AssetType.IMAGE);
 		
 		
 		#elseif html5
@@ -175,7 +337,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_blank_l_stepped.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/book_blank_r.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_blank_r_stepped.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -191,7 +361,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_default_l_stepped.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/book_default_r.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_default_r_stepped.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -199,7 +377,15 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_rewritten_l_stepped.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/book_rewritten_r.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_rewritten_r_stepped.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -207,7 +393,91 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_scored_l_stepped.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/book_scored_r.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/book_scored_r_stepped.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_3.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_4.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_6.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_8.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookanim_9.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_3.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_4.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_6.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/bookburn/book_burn_8.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -219,7 +489,83 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
-		id = "data/graphics/fg.png";
+		id = "data/graphics/burn/player_burn_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_10.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_11.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_12.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_13.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_14.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_15.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_16.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_3.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_4.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_5.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_6.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_7.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_8.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/burn/player_burn_9.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/fg_0.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/fg_1.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/fg_2.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -231,7 +577,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/firepit2_fg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/firepit_fg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/icon_drop.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_exit.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -243,7 +601,19 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_steps.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/icon_take.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_unlock.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/key.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -268,6 +638,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/waterpit2.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/waterpit2_fg.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/waterpit_fg.png";
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
@@ -307,8 +685,14 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/book_blank_l.png", __ASSET__data_graphics_book_blank_l_png);
 		type.set ("data/graphics/book_blank_l.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/book_blank_l_stepped.png", __ASSET__data_graphics_book_blank_l_stepped_png);
+		type.set ("data/graphics/book_blank_l_stepped.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/book_blank_r.png", __ASSET__data_graphics_book_blank_r_png);
 		type.set ("data/graphics/book_blank_r.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/book_blank_r_stepped.png", __ASSET__data_graphics_book_blank_r_stepped_png);
+		type.set ("data/graphics/book_blank_r_stepped.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/book_cover.png", __ASSET__data_graphics_book_cover_png);
 		type.set ("data/graphics/book_cover.png", AssetType.IMAGE);
@@ -319,20 +703,95 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/book_default_l.png", __ASSET__data_graphics_book_default_l_png);
 		type.set ("data/graphics/book_default_l.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/book_default_l_stepped.png", __ASSET__data_graphics_book_default_l_stepped_png);
+		type.set ("data/graphics/book_default_l_stepped.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/book_default_r.png", __ASSET__data_graphics_book_default_r_png);
 		type.set ("data/graphics/book_default_r.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/book_default_r_stepped.png", __ASSET__data_graphics_book_default_r_stepped_png);
+		type.set ("data/graphics/book_default_r_stepped.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/book_rewritten_l.png", __ASSET__data_graphics_book_rewritten_l_png);
 		type.set ("data/graphics/book_rewritten_l.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/book_rewritten_l_stepped.png", __ASSET__data_graphics_book_rewritten_l_stepped_png);
+		type.set ("data/graphics/book_rewritten_l_stepped.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/book_rewritten_r.png", __ASSET__data_graphics_book_rewritten_r_png);
 		type.set ("data/graphics/book_rewritten_r.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/book_rewritten_r_stepped.png", __ASSET__data_graphics_book_rewritten_r_stepped_png);
+		type.set ("data/graphics/book_rewritten_r_stepped.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/book_scored_l.png", __ASSET__data_graphics_book_scored_l_png);
 		type.set ("data/graphics/book_scored_l.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/book_scored_l_stepped.png", __ASSET__data_graphics_book_scored_l_stepped_png);
+		type.set ("data/graphics/book_scored_l_stepped.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/book_scored_r.png", __ASSET__data_graphics_book_scored_r_png);
 		type.set ("data/graphics/book_scored_r.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/book_scored_r_stepped.png", __ASSET__data_graphics_book_scored_r_stepped_png);
+		type.set ("data/graphics/book_scored_r_stepped.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_0.png", __ASSET__data_graphics_bookanim_0_png);
+		type.set ("data/graphics/bookanim_0.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_1.png", __ASSET__data_graphics_bookanim_1_png);
+		type.set ("data/graphics/bookanim_1.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_2.png", __ASSET__data_graphics_bookanim_2_png);
+		type.set ("data/graphics/bookanim_2.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_3.png", __ASSET__data_graphics_bookanim_3_png);
+		type.set ("data/graphics/bookanim_3.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_4.png", __ASSET__data_graphics_bookanim_4_png);
+		type.set ("data/graphics/bookanim_4.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_5.png", __ASSET__data_graphics_bookanim_5_png);
+		type.set ("data/graphics/bookanim_5.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_6.png", __ASSET__data_graphics_bookanim_6_png);
+		type.set ("data/graphics/bookanim_6.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_7.png", __ASSET__data_graphics_bookanim_7_png);
+		type.set ("data/graphics/bookanim_7.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_8.png", __ASSET__data_graphics_bookanim_8_png);
+		type.set ("data/graphics/bookanim_8.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookanim_9.png", __ASSET__data_graphics_bookanim_9_png);
+		type.set ("data/graphics/bookanim_9.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_0.png", __ASSET__data_graphics_bookburn_book_burn_0_png);
+		type.set ("data/graphics/bookburn/book_burn_0.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_1.png", __ASSET__data_graphics_bookburn_book_burn_1_png);
+		type.set ("data/graphics/bookburn/book_burn_1.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_2.png", __ASSET__data_graphics_bookburn_book_burn_2_png);
+		type.set ("data/graphics/bookburn/book_burn_2.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_3.png", __ASSET__data_graphics_bookburn_book_burn_3_png);
+		type.set ("data/graphics/bookburn/book_burn_3.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_4.png", __ASSET__data_graphics_bookburn_book_burn_4_png);
+		type.set ("data/graphics/bookburn/book_burn_4.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_5.png", __ASSET__data_graphics_bookburn_book_burn_5_png);
+		type.set ("data/graphics/bookburn/book_burn_5.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_6.png", __ASSET__data_graphics_bookburn_book_burn_6_png);
+		type.set ("data/graphics/bookburn/book_burn_6.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_7.png", __ASSET__data_graphics_bookburn_book_burn_7_png);
+		type.set ("data/graphics/bookburn/book_burn_7.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/bookburn/book_burn_8.png", __ASSET__data_graphics_bookburn_book_burn_8_png);
+		type.set ("data/graphics/bookburn/book_burn_8.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/bookframe.png", __ASSET__data_graphics_bookframe_png);
 		type.set ("data/graphics/bookframe.png", AssetType.IMAGE);
@@ -340,8 +799,65 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/brush.png", __ASSET__data_graphics_brush_png);
 		type.set ("data/graphics/brush.png", AssetType.IMAGE);
 		
-		className.set ("data/graphics/fg.png", __ASSET__data_graphics_fg_png);
-		type.set ("data/graphics/fg.png", AssetType.IMAGE);
+		className.set ("data/graphics/burn/player_burn_0.png", __ASSET__data_graphics_burn_player_burn_0_png);
+		type.set ("data/graphics/burn/player_burn_0.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_1.png", __ASSET__data_graphics_burn_player_burn_1_png);
+		type.set ("data/graphics/burn/player_burn_1.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_10.png", __ASSET__data_graphics_burn_player_burn_10_png);
+		type.set ("data/graphics/burn/player_burn_10.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_11.png", __ASSET__data_graphics_burn_player_burn_11_png);
+		type.set ("data/graphics/burn/player_burn_11.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_12.png", __ASSET__data_graphics_burn_player_burn_12_png);
+		type.set ("data/graphics/burn/player_burn_12.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_13.png", __ASSET__data_graphics_burn_player_burn_13_png);
+		type.set ("data/graphics/burn/player_burn_13.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_14.png", __ASSET__data_graphics_burn_player_burn_14_png);
+		type.set ("data/graphics/burn/player_burn_14.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_15.png", __ASSET__data_graphics_burn_player_burn_15_png);
+		type.set ("data/graphics/burn/player_burn_15.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_16.png", __ASSET__data_graphics_burn_player_burn_16_png);
+		type.set ("data/graphics/burn/player_burn_16.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_2.png", __ASSET__data_graphics_burn_player_burn_2_png);
+		type.set ("data/graphics/burn/player_burn_2.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_3.png", __ASSET__data_graphics_burn_player_burn_3_png);
+		type.set ("data/graphics/burn/player_burn_3.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_4.png", __ASSET__data_graphics_burn_player_burn_4_png);
+		type.set ("data/graphics/burn/player_burn_4.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_5.png", __ASSET__data_graphics_burn_player_burn_5_png);
+		type.set ("data/graphics/burn/player_burn_5.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_6.png", __ASSET__data_graphics_burn_player_burn_6_png);
+		type.set ("data/graphics/burn/player_burn_6.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_7.png", __ASSET__data_graphics_burn_player_burn_7_png);
+		type.set ("data/graphics/burn/player_burn_7.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_8.png", __ASSET__data_graphics_burn_player_burn_8_png);
+		type.set ("data/graphics/burn/player_burn_8.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/burn/player_burn_9.png", __ASSET__data_graphics_burn_player_burn_9_png);
+		type.set ("data/graphics/burn/player_burn_9.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/fg_0.png", __ASSET__data_graphics_fg_0_png);
+		type.set ("data/graphics/fg_0.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/fg_1.png", __ASSET__data_graphics_fg_1_png);
+		type.set ("data/graphics/fg_1.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/fg_2.png", __ASSET__data_graphics_fg_2_png);
+		type.set ("data/graphics/fg_2.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/firepit.png", __ASSET__data_graphics_firepit_png);
 		type.set ("data/graphics/firepit.png", AssetType.IMAGE);
@@ -349,8 +865,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/firepit2.png", __ASSET__data_graphics_firepit2_png);
 		type.set ("data/graphics/firepit2.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/firepit2_fg.png", __ASSET__data_graphics_firepit2_fg_png);
+		type.set ("data/graphics/firepit2_fg.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/firepit_fg.png", __ASSET__data_graphics_firepit_fg_png);
+		type.set ("data/graphics/firepit_fg.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/icon_drop.png", __ASSET__data_graphics_icon_drop_png);
 		type.set ("data/graphics/icon_drop.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_exit.png", __ASSET__data_graphics_icon_exit_png);
+		type.set ("data/graphics/icon_exit.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/icon_paint.png", __ASSET__data_graphics_icon_paint_png);
 		type.set ("data/graphics/icon_paint.png", AssetType.IMAGE);
@@ -358,8 +883,17 @@ class DefaultAssetLibrary extends AssetLibrary {
 		className.set ("data/graphics/icon_read.png", __ASSET__data_graphics_icon_read_png);
 		type.set ("data/graphics/icon_read.png", AssetType.IMAGE);
 		
+		className.set ("data/graphics/icon_steps.png", __ASSET__data_graphics_icon_steps_png);
+		type.set ("data/graphics/icon_steps.png", AssetType.IMAGE);
+		
 		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
 		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_unlock.png", __ASSET__data_graphics_icon_unlock_png);
+		type.set ("data/graphics/icon_unlock.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/key.png", __ASSET__data_graphics_key_png);
+		type.set ("data/graphics/key.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/player.png", __ASSET__data_graphics_player_png);
 		type.set ("data/graphics/player.png", AssetType.IMAGE);
@@ -378,6 +912,12 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("data/graphics/waterpit2.png", __ASSET__data_graphics_waterpit2_png);
 		type.set ("data/graphics/waterpit2.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/waterpit2_fg.png", __ASSET__data_graphics_waterpit2_fg_png);
+		type.set ("data/graphics/waterpit2_fg.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/waterpit_fg.png", __ASSET__data_graphics_waterpit_fg_png);
+		type.set ("data/graphics/waterpit_fg.png", AssetType.IMAGE);
 		
 		
 		if (useManifest) {
@@ -1028,36 +1568,144 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends null { }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_bgtiles_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_l_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_blank_r_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_cover_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_covermask_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_default_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_default_l_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_default_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_default_r_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_rewritten_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_rewritten_l_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_rewritten_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_rewritten_r_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_l_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_l_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_r_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_book_scored_r_stepped_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_6_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_8_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookanim_9_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_6_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_bookburn_book_burn_8_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_bookframe_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_brush_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
-@:keep @:bind #if display private #end class __ASSET__data_graphics_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_10_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_11_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_12_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_13_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_14_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_15_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_16_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_3_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_4_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_5_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_6_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_7_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_8_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_burn_player_burn_9_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_fg_0_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_fg_1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_fg_2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_firepit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_firepit2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_firepit2_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_firepit_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_drop_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_exit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_paint_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_read_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_steps_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_take_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_unlock_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_key_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_playerwalk1_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_playerwalk2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_smallbook_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_waterpit_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_waterpit2_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_waterpit2_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_waterpit_fg_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 
 
 #elseif html5
 
 
 @:keep #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends lime.text.Font { public function new () { super (); name = "Open Sans"; } } 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1101,30 +1749,84 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:file("data/fonts/opensans/opensans.woff2") #if display private #end class __ASSET__data_fonts_opensans_opensans_woff2 extends lime.utils.Bytes {}
 @:image("data/graphics/bgtiles.png") #if display private #end class __ASSET__data_graphics_bgtiles_png extends lime.graphics.Image {}
 @:image("data/graphics/book_blank_l.png") #if display private #end class __ASSET__data_graphics_book_blank_l_png extends lime.graphics.Image {}
+@:image("data/graphics/book_blank_l_stepped.png") #if display private #end class __ASSET__data_graphics_book_blank_l_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_blank_r.png") #if display private #end class __ASSET__data_graphics_book_blank_r_png extends lime.graphics.Image {}
+@:image("data/graphics/book_blank_r_stepped.png") #if display private #end class __ASSET__data_graphics_book_blank_r_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_cover.png") #if display private #end class __ASSET__data_graphics_book_cover_png extends lime.graphics.Image {}
 @:image("data/graphics/book_covermask.png") #if display private #end class __ASSET__data_graphics_book_covermask_png extends lime.graphics.Image {}
 @:image("data/graphics/book_default_l.png") #if display private #end class __ASSET__data_graphics_book_default_l_png extends lime.graphics.Image {}
+@:image("data/graphics/book_default_l_stepped.png") #if display private #end class __ASSET__data_graphics_book_default_l_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_default_r.png") #if display private #end class __ASSET__data_graphics_book_default_r_png extends lime.graphics.Image {}
+@:image("data/graphics/book_default_r_stepped.png") #if display private #end class __ASSET__data_graphics_book_default_r_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_rewritten_l.png") #if display private #end class __ASSET__data_graphics_book_rewritten_l_png extends lime.graphics.Image {}
+@:image("data/graphics/book_rewritten_l_stepped.png") #if display private #end class __ASSET__data_graphics_book_rewritten_l_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_rewritten_r.png") #if display private #end class __ASSET__data_graphics_book_rewritten_r_png extends lime.graphics.Image {}
+@:image("data/graphics/book_rewritten_r_stepped.png") #if display private #end class __ASSET__data_graphics_book_rewritten_r_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_scored_l.png") #if display private #end class __ASSET__data_graphics_book_scored_l_png extends lime.graphics.Image {}
+@:image("data/graphics/book_scored_l_stepped.png") #if display private #end class __ASSET__data_graphics_book_scored_l_stepped_png extends lime.graphics.Image {}
 @:image("data/graphics/book_scored_r.png") #if display private #end class __ASSET__data_graphics_book_scored_r_png extends lime.graphics.Image {}
+@:image("data/graphics/book_scored_r_stepped.png") #if display private #end class __ASSET__data_graphics_book_scored_r_stepped_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_0.png") #if display private #end class __ASSET__data_graphics_bookanim_0_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_1.png") #if display private #end class __ASSET__data_graphics_bookanim_1_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_2.png") #if display private #end class __ASSET__data_graphics_bookanim_2_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_3.png") #if display private #end class __ASSET__data_graphics_bookanim_3_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_4.png") #if display private #end class __ASSET__data_graphics_bookanim_4_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_5.png") #if display private #end class __ASSET__data_graphics_bookanim_5_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_6.png") #if display private #end class __ASSET__data_graphics_bookanim_6_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_7.png") #if display private #end class __ASSET__data_graphics_bookanim_7_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_8.png") #if display private #end class __ASSET__data_graphics_bookanim_8_png extends lime.graphics.Image {}
+@:image("data/graphics/bookanim_9.png") #if display private #end class __ASSET__data_graphics_bookanim_9_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_0.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_0_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_1.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_1_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_2.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_2_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_3.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_3_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_4.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_4_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_5.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_5_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_6.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_6_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_7.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_7_png extends lime.graphics.Image {}
+@:image("data/graphics/bookburn/book_burn_8.png") #if display private #end class __ASSET__data_graphics_bookburn_book_burn_8_png extends lime.graphics.Image {}
 @:image("data/graphics/bookframe.png") #if display private #end class __ASSET__data_graphics_bookframe_png extends lime.graphics.Image {}
 @:image("data/graphics/brush.png") #if display private #end class __ASSET__data_graphics_brush_png extends lime.graphics.Image {}
-@:image("data/graphics/fg.png") #if display private #end class __ASSET__data_graphics_fg_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_0.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_0_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_1.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_1_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_10.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_10_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_11.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_11_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_12.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_12_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_13.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_13_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_14.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_14_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_15.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_15_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_16.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_16_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_2.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_2_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_3.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_3_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_4.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_4_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_5.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_5_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_6.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_6_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_7.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_7_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_8.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_8_png extends lime.graphics.Image {}
+@:image("data/graphics/burn/player_burn_9.png") #if display private #end class __ASSET__data_graphics_burn_player_burn_9_png extends lime.graphics.Image {}
+@:image("data/graphics/fg_0.png") #if display private #end class __ASSET__data_graphics_fg_0_png extends lime.graphics.Image {}
+@:image("data/graphics/fg_1.png") #if display private #end class __ASSET__data_graphics_fg_1_png extends lime.graphics.Image {}
+@:image("data/graphics/fg_2.png") #if display private #end class __ASSET__data_graphics_fg_2_png extends lime.graphics.Image {}
 @:image("data/graphics/firepit.png") #if display private #end class __ASSET__data_graphics_firepit_png extends lime.graphics.Image {}
 @:image("data/graphics/firepit2.png") #if display private #end class __ASSET__data_graphics_firepit2_png extends lime.graphics.Image {}
+@:image("data/graphics/firepit2_fg.png") #if display private #end class __ASSET__data_graphics_firepit2_fg_png extends lime.graphics.Image {}
+@:image("data/graphics/firepit_fg.png") #if display private #end class __ASSET__data_graphics_firepit_fg_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_drop.png") #if display private #end class __ASSET__data_graphics_icon_drop_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_exit.png") #if display private #end class __ASSET__data_graphics_icon_exit_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_paint.png") #if display private #end class __ASSET__data_graphics_icon_paint_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_read.png") #if display private #end class __ASSET__data_graphics_icon_read_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_steps.png") #if display private #end class __ASSET__data_graphics_icon_steps_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_take.png") #if display private #end class __ASSET__data_graphics_icon_take_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_unlock.png") #if display private #end class __ASSET__data_graphics_icon_unlock_png extends lime.graphics.Image {}
+@:image("data/graphics/key.png") #if display private #end class __ASSET__data_graphics_key_png extends lime.graphics.Image {}
 @:image("data/graphics/player.png") #if display private #end class __ASSET__data_graphics_player_png extends lime.graphics.Image {}
 @:image("data/graphics/playerwalk1.png") #if display private #end class __ASSET__data_graphics_playerwalk1_png extends lime.graphics.Image {}
 @:image("data/graphics/playerwalk2.png") #if display private #end class __ASSET__data_graphics_playerwalk2_png extends lime.graphics.Image {}
 @:image("data/graphics/smallbook.png") #if display private #end class __ASSET__data_graphics_smallbook_png extends lime.graphics.Image {}
 @:image("data/graphics/waterpit.png") #if display private #end class __ASSET__data_graphics_waterpit_png extends lime.graphics.Image {}
 @:image("data/graphics/waterpit2.png") #if display private #end class __ASSET__data_graphics_waterpit2_png extends lime.graphics.Image {}
+@:image("data/graphics/waterpit2_fg.png") #if display private #end class __ASSET__data_graphics_waterpit2_fg_png extends lime.graphics.Image {}
+@:image("data/graphics/waterpit_fg.png") #if display private #end class __ASSET__data_graphics_waterpit_fg_png extends lime.graphics.Image {}
 
 
 

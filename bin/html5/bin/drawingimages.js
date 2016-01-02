@@ -35,7 +35,11 @@ ApplicationMain.create = function() {
 	types.push("IMAGE");
 	urls.push("data/graphics/book_blank_l.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/book_blank_l_stepped.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/book_blank_r.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/book_blank_r_stepped.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/book_cover.png");
 	types.push("IMAGE");
@@ -43,33 +47,133 @@ ApplicationMain.create = function() {
 	types.push("IMAGE");
 	urls.push("data/graphics/book_default_l.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/book_default_l_stepped.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/book_default_r.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/book_default_r_stepped.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/book_rewritten_l.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/book_rewritten_l_stepped.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/book_rewritten_r.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/book_rewritten_r_stepped.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/book_scored_l.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/book_scored_l_stepped.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/book_scored_r.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/book_scored_r_stepped.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_0.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_1.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_2.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_3.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_4.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_5.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_6.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_7.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_8.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookanim_9.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_0.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_1.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_2.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_3.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_4.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_5.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_6.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_7.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/bookburn/book_burn_8.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/bookframe.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/brush.png");
 	types.push("IMAGE");
-	urls.push("data/graphics/fg.png");
+	urls.push("data/graphics/burn/player_burn_0.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_1.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_10.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_11.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_12.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_13.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_14.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_15.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_16.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_2.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_3.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_4.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_5.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_6.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_7.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_8.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/burn/player_burn_9.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/fg_0.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/fg_1.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/fg_2.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/firepit.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/firepit2.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/firepit2_fg.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/firepit_fg.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/icon_drop.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_exit.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/icon_paint.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/icon_read.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/icon_steps.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/icon_take.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/icon_unlock.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/key.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/player.png");
 	types.push("IMAGE");
@@ -82,6 +186,10 @@ ApplicationMain.create = function() {
 	urls.push("data/graphics/waterpit.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/waterpit2.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/waterpit2_fg.png");
+	types.push("IMAGE");
+	urls.push("data/graphics/waterpit_fg.png");
 	types.push("IMAGE");
 	if(ApplicationMain.config.assetsPrefix != null) {
 		var _g1 = 0;
@@ -105,7 +213,7 @@ ApplicationMain.init = function() {
 	if(total == 0) ApplicationMain.start();
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "155", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
+	ApplicationMain.config = { build : "204", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -1629,7 +1737,13 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/book_blank_l.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_blank_l_stepped.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_blank_r.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_blank_r_stepped.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_cover.png";
@@ -1641,19 +1755,94 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/book_default_l.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_default_l_stepped.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_default_r.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_default_r_stepped.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_rewritten_l.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_rewritten_l_stepped.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_rewritten_r.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_rewritten_r_stepped.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_scored_l.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_scored_l_stepped.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/book_scored_r.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/book_scored_r_stepped.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_1.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_2.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_3.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_4.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_5.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_6.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_7.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_8.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookanim_9.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_1.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_2.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_3.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_4.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_5.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_6.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_7.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/bookburn/book_burn_8.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/bookframe.png";
@@ -1662,7 +1851,64 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/brush.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
-	id = "data/graphics/fg.png";
+	id = "data/graphics/burn/player_burn_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_1.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_10.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_11.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_12.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_13.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_14.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_15.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_16.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_2.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_3.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_4.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_5.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_6.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_7.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_8.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/burn/player_burn_9.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/fg_0.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/fg_1.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/fg_2.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/firepit.png";
@@ -1671,7 +1917,16 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/firepit2.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/firepit2_fg.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/firepit_fg.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/icon_drop.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_exit.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/icon_paint.png";
@@ -1680,7 +1935,16 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/icon_read.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_steps.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/icon_take.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_unlock.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/key.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/player.png";
@@ -1699,6 +1963,12 @@ var DefaultAssetLibrary = function() {
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	id = "data/graphics/waterpit2.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/waterpit2_fg.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
+	id = "data/graphics/waterpit_fg.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
 	var assetsPrefix = null;
@@ -2057,7 +2327,20 @@ _$List_ListIterator.prototype = {
 	,__class__: _$List_ListIterator
 };
 var Main = function() {
+	this.bookanimtimer = 0;
+	this.cutscenetimer = 0;
+	this.cutscene = -1;
 	this.t = 0;
+	this.exity = 22;
+	this.exitx = 5;
+	this.brushy = 8;
+	this.brushx = 8;
+	this.pedastaly = 7;
+	this.pedastalx = 5;
+	this.firepity = 4;
+	this.firepitx = 7;
+	this.waterpity = 4;
+	this.waterpitx = 3;
 	this.initbookpause = 5;
 	this.bookanimspeed = 1;
 	this.bookframe = 0;
@@ -2068,40 +2351,118 @@ var Main = function() {
 	this.dx = 0;
 	this.brushgy = 8;
 	this.brushgx = 7;
+	this.py = 285;
+	this.px = 168;
+	this.keyy = 14;
+	this.keyx = 7;
+	this.doory = 11;
+	this.doorx = 5;
 	this.watergy = 6;
 	this.watergx = 5;
 	this.firegy = 4;
 	this.firegx = 4;
-	this.tilemap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,1,0,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-	this.gridh = 25;
+	this.tilemap = [0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,1,0,0,0,1,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,1,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,0,0,0,0,0,0,0,1,0,0,1,1,1,1,2,1,1,1,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
+	this.cleanedbrush = false;
+	this.statuesad = false;
+	this.bookfootprints = false;
+	this.bookstate = 0;
+	this.holding = -1;
+	this.waterbrush = false;
+	this.waterbook = false;
+	this.floorbrush = true;
+	this.floorbook = false;
+	this.pedastalbrush = false;
+	this.pedastalbook = true;
+	this.unlocked = false;
+	this.haskey = false;
+	this.gridh = 23;
 	this.gridw = 11;
-	this.py = 247;
-	this.px = 140;
+	haxe_Log.trace("AAA",{ fileName : "Main.hx", lineNumber : 107, className : "Main", methodName : "new"});
 	this.cellwmid = haxegon_Convert.toint(14.);
 	this.cellhmid = haxegon_Convert.toint(9.5);
 	haxegon_Gfx.resizescreen(308,228);
 	haxegon_Gfx.loadimage("bgtiles");
-	haxegon_Gfx.loadimage("book_blank_l");
-	haxegon_Gfx.loadimage("book_blank_r");
 	haxegon_Gfx.loadimage("book_cover");
 	haxegon_Gfx.loadimage("book_covermask");
+	haxegon_Gfx.loadimage("book_blank_l");
+	haxegon_Gfx.loadimage("book_blank_r");
 	haxegon_Gfx.loadimage("book_default_l");
 	haxegon_Gfx.loadimage("book_default_r");
 	haxegon_Gfx.loadimage("book_rewritten_l");
 	haxegon_Gfx.loadimage("book_rewritten_r");
 	haxegon_Gfx.loadimage("book_scored_l");
 	haxegon_Gfx.loadimage("book_scored_r");
+	haxegon_Gfx.loadimage("book_blank_l_stepped");
+	haxegon_Gfx.loadimage("book_blank_r_stepped");
+	haxegon_Gfx.loadimage("book_default_l_stepped");
+	haxegon_Gfx.loadimage("book_default_r_stepped");
+	haxegon_Gfx.loadimage("book_rewritten_l_stepped");
+	haxegon_Gfx.loadimage("book_rewritten_r_stepped");
+	haxegon_Gfx.loadimage("book_scored_l_stepped");
+	haxegon_Gfx.loadimage("book_scored_r_stepped");
+	haxegon_Gfx.loadimage("bookanim_0");
+	haxegon_Gfx.loadimage("bookanim_1");
+	haxegon_Gfx.loadimage("bookanim_2");
+	haxegon_Gfx.loadimage("bookanim_3");
+	haxegon_Gfx.loadimage("bookanim_4");
+	haxegon_Gfx.loadimage("bookanim_5");
+	haxegon_Gfx.loadimage("bookanim_6");
+	haxegon_Gfx.loadimage("bookanim_7");
+	haxegon_Gfx.loadimage("bookanim_8");
+	haxegon_Gfx.loadimage("bookanim_9");
 	haxegon_Gfx.loadimage("bookframe");
 	haxegon_Gfx.loadimage("brush");
-	haxegon_Gfx.loadimage("fg");
+	haxegon_Gfx.loadimage("fg_0");
+	haxegon_Gfx.loadimage("fg_1");
+	haxegon_Gfx.loadimage("fg_2");
 	haxegon_Gfx.loadimage("firepit");
 	haxegon_Gfx.loadimage("firepit2");
+	haxegon_Gfx.loadimage("firepit_fg");
+	haxegon_Gfx.loadimage("firepit2_fg");
+	haxegon_Gfx.loadimage("icon_drop");
+	haxegon_Gfx.loadimage("icon_exit");
+	haxegon_Gfx.loadimage("icon_paint");
+	haxegon_Gfx.loadimage("icon_read");
+	haxegon_Gfx.loadimage("icon_steps");
+	haxegon_Gfx.loadimage("icon_take");
+	haxegon_Gfx.loadimage("icon_unlock");
+	haxegon_Gfx.loadimage("key");
 	haxegon_Gfx.loadimage("player");
 	haxegon_Gfx.loadimage("playerwalk1");
 	haxegon_Gfx.loadimage("playerwalk2");
 	haxegon_Gfx.loadimage("smallbook");
+	haxe_Log.trace("BBB",{ fileName : "Main.hx", lineNumber : 161, className : "Main", methodName : "new"});
 	haxegon_Gfx.loadimage("waterpit");
 	haxegon_Gfx.loadimage("waterpit2");
+	haxegon_Gfx.loadimage("waterpit_fg");
+	haxegon_Gfx.loadimage("waterpit2_fg");
+	haxegon_Gfx.loadimage("burn/player_burn_0");
+	haxegon_Gfx.loadimage("burn/player_burn_1");
+	haxegon_Gfx.loadimage("burn/player_burn_2");
+	haxegon_Gfx.loadimage("burn/player_burn_3");
+	haxegon_Gfx.loadimage("burn/player_burn_4");
+	haxegon_Gfx.loadimage("burn/player_burn_5");
+	haxegon_Gfx.loadimage("burn/player_burn_6");
+	haxegon_Gfx.loadimage("burn/player_burn_7");
+	haxegon_Gfx.loadimage("burn/player_burn_8");
+	haxegon_Gfx.loadimage("burn/player_burn_9");
+	haxegon_Gfx.loadimage("burn/player_burn_10");
+	haxegon_Gfx.loadimage("burn/player_burn_11");
+	haxegon_Gfx.loadimage("burn/player_burn_12");
+	haxegon_Gfx.loadimage("burn/player_burn_13");
+	haxegon_Gfx.loadimage("burn/player_burn_14");
+	haxegon_Gfx.loadimage("burn/player_burn_15");
+	haxegon_Gfx.loadimage("burn/player_burn_16");
+	haxegon_Gfx.loadimage("bookburn/book_burn_0");
+	haxegon_Gfx.loadimage("bookburn/book_burn_1");
+	haxegon_Gfx.loadimage("bookburn/book_burn_2");
+	haxegon_Gfx.loadimage("bookburn/book_burn_3");
+	haxegon_Gfx.loadimage("bookburn/book_burn_4");
+	haxegon_Gfx.loadimage("bookburn/book_burn_5");
+	haxegon_Gfx.loadimage("bookburn/book_burn_6");
+	haxegon_Gfx.loadimage("bookburn/book_burn_7");
+	haxegon_Gfx.loadimage("bookburn/book_burn_8");
+	haxe_Log.trace("CCC",{ fileName : "Main.hx", lineNumber : 192, className : "Main", methodName : "new"});
 	this.maph = haxegon_Gfx.imageheight("bgtiles");
 	this.mapw = haxegon_Gfx.imagewidth("bgtiles");
 	this.pw = haxegon_Gfx.imagewidth("player");
@@ -2117,9 +2478,21 @@ var Main = function() {
 $hxClasses["Main"] = Main;
 Main.__name__ = ["Main"];
 Main.prototype = {
-	checkCollision: function(tx,ty) {
-		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 113, className : "Main", methodName : "checkCollision"});
-		if(tx < 0 || tx >= this.gridw || ty < 0 || ty >= this.gridh || this.tilemap[tx + this.gridw * ty] == 1) {
+	ResetAll: function() {
+		this.haskey = false;
+		this.unlocked = false;
+		this.pedastalbook = true;
+		this.pedastalbrush = false;
+		this.floorbook = false;
+		this.floorbrush = true;
+		this.holding = -1;
+		this.bookstate = 0;
+		this.bookfootprints = false;
+		this.statuesad = false;
+	}
+	,checkCollision: function(tx,ty) {
+		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 208, className : "Main", methodName : "checkCollision"});
+		if(tx < 0 || tx >= this.gridw || ty < 0 || ty >= this.gridh || this.tilemap[tx + this.gridw * ty] == 1 || !this.unlocked && this.tilemap[tx + this.gridw * ty] == 2 || (this.floorbook || this.floorbrush) && tx == this.brushx && ty == this.brushy || !this.haskey && tx == this.keyx && ty == this.keyy) {
 			this.dx = 0;
 			this.dy = 0;
 			return true;
@@ -2133,20 +2506,36 @@ Main.prototype = {
 		var bookoffset = f;
 		if(bookoffset >= bookwmid) bookoffset = bookwmid;
 		haxegon_Gfx.drawimage(haxegon_Gfx.CENTER,haxegon_Gfx.CENTER,"bookframe");
+		var leftpage = "book_default_l";
+		var rightpage = "book_default_r";
+		if(this.bookstate == 1) {
+			leftpage = "book_scored_l";
+			rightpage = "book_scored_r";
+		} else if(this.bookstate == 2) {
+			leftpage = "book_rewritten_l";
+			rightpage = "book_rewriten_r";
+		} else if(this.bookstate == 3) {
+			leftpage = "book_blank_l";
+			rightpage = "book_blank_r";
+		}
+		if(this.bookfootprints) {
+			leftpage += "_stepped";
+			rightpage += "_stepped";
+		}
 		var f2 = haxegon_Convert.tofloat(f) / bookwmid;
 		if(f2 > 1) {
 			var f3 = f2 - 1;
 			if(f3 > 1) f3 = 1;
-			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 145, className : "Main", methodName : "DrawBook"});
-			var lpagew = haxegon_Gfx.imagewidth("book_default_l");
+			haxe_Log.trace(f3,{ fileName : "Main.hx", lineNumber : 265, className : "Main", methodName : "DrawBook"});
+			var lpagew = haxegon_Gfx.imagewidth(leftpage);
 			var lpagewmid = haxegon_Convert.toint(lpagew / 2);
 			var bookoffset2 = f3 * lpagewmid;
 			haxegon_Gfx.scale(f3,1);
-			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER - bookoffset2 + 1,haxegon_Gfx.CENTER,"book_default_l");
+			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER - bookoffset2 + 1,haxegon_Gfx.CENTER,leftpage);
 			haxegon_Gfx.scale(1,1);
-			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER + bookoffset - 1,haxegon_Gfx.CENTER,"book_default_r");
+			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER + bookoffset - 1,haxegon_Gfx.CENTER,rightpage);
 		} else {
-			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER + bookoffset - 1,haxegon_Gfx.CENTER,"book_default_r");
+			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER + bookoffset - 1,haxegon_Gfx.CENTER,rightpage);
 			haxegon_Gfx.scale(1 - f2,1);
 			haxegon_Gfx.drawimage(haxegon_Gfx.CENTER,haxegon_Gfx.CENTER,"book_cover");
 			haxegon_Gfx.scale(1,1);
@@ -2172,10 +2561,150 @@ Main.prototype = {
 			haxegon_Text.display(haxegon_Gfx.screenwidthmid - margin,haxegon_Gfx.screenheightmid - height,s);
 		}
 	}
+	,StartReadBook: function() {
+		if(!this.showbook) {
+			this.showbook = true;
+			this.bookframe = 0;
+			this.initbookpause = 5;
+			haxe_Log.trace("StartReadBook",{ fileName : "Main.hx", lineNumber : 336, className : "Main", methodName : "StartReadBook"});
+		}
+	}
+	,StartWaterpitSacrifice: function() {
+		haxe_Log.trace("StartWaterpitSacrifice",{ fileName : "Main.hx", lineNumber : 340, className : "Main", methodName : "StartWaterpitSacrifice"});
+		this.cutscene = 0;
+		this.cutscenetimer = 0;
+		this.dy = -1;
+		this.py -= this.dy;
+	}
+	,StartFirepitSacrifice: function() {
+		haxe_Log.trace("StartFirepitSacrifice",{ fileName : "Main.hx", lineNumber : 347, className : "Main", methodName : "StartFirepitSacrifice"});
+		this.cutscene = 1;
+		this.cutscenetimer = 0;
+		this.dy = -1;
+		this.py -= this.dy;
+	}
+	,DropItemInWaterpit: function() {
+		if(this.holding == 0) {
+			this.holding = -1;
+			if(this.bookstate != 0) this.bookanimtimer = 9;
+			this.bookstate = 0;
+			this.waterbook = true;
+		}
+		if(this.holding == 1) {
+			this.holding = -1;
+			this.waterbrush = true;
+			this.cleanedbrush = true;
+		}
+		haxe_Log.trace("DropItemInWaterpit",{ fileName : "Main.hx", lineNumber : 369, className : "Main", methodName : "DropItemInWaterpit"});
+	}
+	,DropItemInFirepit: function() {
+		haxe_Log.trace("DropItemInFirepit",{ fileName : "Main.hx", lineNumber : 372, className : "Main", methodName : "DropItemInFirepit"});
+		if(this.holding == 0) {
+		} else if(this.holding == 1) {
+		}
+		this.holding = -1;
+	}
+	,StartWriteBook: function() {
+		this.statuesad = true;
+		if(this.bookstate == 0) this.bookstate = 1; else if(this.bookstate == 1) this.bookstate = 2; else if(this.bookstate == 3) this.bookstate = 0;
+		haxe_Log.trace("StartWriteBook",{ fileName : "Main.hx", lineNumber : 389, className : "Main", methodName : "StartWriteBook"});
+	}
+	,StartStepOnBook: function() {
+		haxe_Log.trace("StartStepOnBook",{ fileName : "Main.hx", lineNumber : 392, className : "Main", methodName : "StartStepOnBook"});
+	}
+	,ProcessAction: function() {
+		var tx = haxegon_Convert.toint(this.px / 28);
+		var ty = haxegon_Convert.toint(this.py / 19);
+		if(tx == this.waterpitx + 1 && ty == this.waterpity) {
+			if(this.holding >= 0 && !this.waterbook && !this.waterbrush) this.DropItemInWaterpit();
+		}
+		if(tx == this.waterpitx && ty == this.waterpity + 1) this.StartWaterpitSacrifice();
+		if(tx == this.waterpitx && ty == this.waterpity - 1) {
+			if(this.waterbook) {
+				this.holding = 0;
+				this.waterbook = false;
+			}
+			if(this.waterbrush) {
+				this.holding = 1;
+				this.waterbrush = false;
+			}
+		}
+		if(tx == this.firepitx - 1 && ty == this.firepity) {
+			if(this.holding >= 0) this.DropItemInFirepit();
+		}
+		if(tx == this.firepitx && ty == this.firepity + 1) this.StartFirepitSacrifice();
+		if(tx == this.pedastalx - 1 && ty == this.pedastaly) {
+			if(this.holding == -1) {
+				if(this.pedastalbook) {
+					this.holding = 0;
+					this.pedastalbook = false;
+				}
+				if(this.pedastalbrush) {
+					this.holding = 1;
+					this.statuesad = true;
+					this.pedastalbrush = false;
+				}
+			}
+		}
+		if(tx == this.pedastalx && ty == this.pedastaly + 1) {
+			if(this.pedastalbook) this.StartReadBook();
+		}
+		if(this.bookstate % 2 == 0 && tx == this.pedastalx + 1 && ty == this.pedastaly || this.bookstate % 2 == 1 && tx == this.pedastalx - 1 && ty == this.pedastaly) {
+			if(this.pedastalbook && this.holding == 1 && this.bookstate != 2) this.StartWriteBook();
+		}
+		if(tx == this.pedastalx && ty == this.pedastaly - 1) {
+			if(this.holding >= 0 && !this.pedastalbook && !this.pedastalbrush) {
+				if(this.holding == 0) {
+					this.pedastalbook = true;
+					this.holding = -1;
+				}
+				if(this.holding == 1) {
+					this.pedastalbrush = true;
+					this.holding = -1;
+				}
+			}
+		}
+		if(tx == this.brushx && ty == this.brushy) {
+			if(this.floorbook && !this.bookfootprints) this.StartStepOnBook();
+		}
+		if(tx == this.brushx && ty == this.brushy + 1) {
+			if(this.holding == -1) {
+				if(this.floorbook) {
+					this.holding = 0;
+					this.floorbook = false;
+				}
+				if(this.floorbrush) {
+					this.holding = 1;
+					this.floorbrush = false;
+				}
+			}
+		}
+		if(tx == this.brushx && ty == this.brushy - 1) {
+			if(this.holding >= 0 && !this.floorbook && !this.floorbrush) {
+				if(this.holding == 0) {
+					this.floorbook = true;
+					this.holding = -1;
+				}
+				if(this.holding == 1) {
+					this.floorbrush = true;
+					this.holding = -1;
+				}
+			}
+		}
+		if(tx == this.keyx && ty == this.keyy + 1) {
+			if(!this.haskey) this.haskey = true;
+		}
+		if(tx == this.doorx && ty == this.doory + 1) {
+			if(this.haskey) this.unlocked = true;
+			haxe_Log.trace("unlock door",{ fileName : "Main.hx", lineNumber : 500, className : "Main", methodName : "ProcessAction"});
+		}
+	}
 	,update: function() {
 		this.t++;
 		var tx = haxegon_Convert.toint(this.px / 28);
 		var ty = haxegon_Convert.toint(this.py / 19);
+		var oldtx = tx;
+		var oldty = ty;
 		var frame = 0;
 		if(this.px % 28 != 0 || this.py % 19 > 1) {
 			frame = haxegon_Convert.toint((this.px + this.py) / 10) % 2;
@@ -2184,31 +2713,75 @@ Main.prototype = {
 		if(this.px % 28 == 0) this.dx = 0;
 		if(this.py % 19 == 0 || this.py % 19 == 1) this.dy = 0;
 		if(this.px % 28 == 0 && (this.py % 19 == 0 || this.py % 19 == 1)) {
-			if(haxegon_Input.pressed(haxegon_Key.UP)) {
-				this.dy = -1;
-				if(this.checkCollision(tx,--ty)) ty++;
-			}
-			if(haxegon_Input.pressed(haxegon_Key.DOWN)) {
-				this.dy = 1;
-				if(this.checkCollision(tx,++ty)) ty--;
-			}
-			if(haxegon_Input.pressed(haxegon_Key.LEFT)) {
-				this.dx = -1;
-				if(this.checkCollision(--tx,ty)) tx++;
-			}
-			if(haxegon_Input.pressed(haxegon_Key.RIGHT)) {
-				this.dx = 1;
-				if(this.checkCollision(++tx,ty)) tx--;
+			if(this.cutscene == -1) {
+				this.ProcessAction();
+				if(haxegon_Input.pressed(haxegon_Key.UP)) {
+					this.dy = -1;
+					if(this.checkCollision(tx,--ty)) ty++;
+				}
+				if(haxegon_Input.pressed(haxegon_Key.DOWN)) {
+					this.dy = 1;
+					if(this.checkCollision(tx,++ty)) ty--;
+				}
+				if(haxegon_Input.pressed(haxegon_Key.LEFT)) {
+					this.dx = -1;
+					if(this.checkCollision(--tx,ty)) tx++;
+				}
+				if(haxegon_Input.pressed(haxegon_Key.RIGHT)) {
+					this.dx = 1;
+					if(this.checkCollision(++tx,ty)) tx--;
+				}
+			} else if(this.cutscene == 0) {
+				if(this.cutscenetimer == 0) {
+					this.dy = -1;
+					this.py -= this.dy;
+					this.cutscenetimer++;
+				} else if(this.cutscenetimer == 1) this.cutscene = -1;
+			} else if(this.cutscene == 1) {
+				if(this.cutscenetimer == 0) {
+					this.dy = -1;
+					this.py -= this.dy;
+					this.cutscenetimer++;
+				} else if(this.cutscenetimer > 0) {
+				}
 			}
 		}
+		if(this.dx != 0 && this.dy != 0) {
+			this.cutscene = -1;
+			this.dx = 0;
+			this.dy = 0;
+			tx = oldtx;
+			ty = oldty;
+		}
+		if(this.dx != 0 || this.dy != 0) this.showbook = false;
 		this.px += 2 * this.dx;
 		this.py += 2 * this.dy;
 		var offy = haxegon_Gfx.screenheightmid - this.cellhmid - this.py;
 		var maxoffy = this.maph - this.screenh;
 		if(-offy > maxoffy) offy = -maxoffy;
-		haxegon_Gfx.drawimage(0,offy,"bgtiles");
-		haxegon_Gfx.drawimage(0,offy,"fg");
-		haxegon_Gfx.drawimage(235,172 + offy,"brush");
+		if(!this.unlocked) haxegon_Gfx.drawimage(0,offy,"fg_0"); else if(this.statuesad) haxegon_Gfx.drawimage(0,offy,"fg_2"); else haxegon_Gfx.drawimage(0,offy,"fg_1");
+		if(!this.haskey) {
+			haxegon_Gfx.drawimage(this.keyx * 28,this.keyy * 19 + offy,"key");
+			haxegon_Gfx.drawimage(this.keyx * 28,(this.keyy + 1) * 19 + offy,"icon_take");
+		}
+		if(this.haskey && !this.unlocked) haxegon_Gfx.drawimage(this.doorx * 28,(this.doory + 1) * 19 + offy,"icon_unlock");
+		if(this.holding >= 0) {
+			if(!this.waterbook && !this.waterbrush) haxegon_Gfx.drawimage((this.waterpitx + 1) * 28,this.waterpity * 19 + offy,"icon_drop");
+			haxegon_Gfx.drawimage((this.firepitx - 1) * 28,this.firepity * 19 + offy,"icon_drop");
+		}
+		if(this.waterbrush || this.waterbook) haxegon_Gfx.drawimage(this.waterpitx * 28,(this.waterpity - 1) * 19 + offy,"icon_take");
+		if(this.holding == -1) haxegon_Gfx.drawimage((this.pedastalx - 1) * 28,this.pedastaly * 19 + offy,"icon_take");
+		if(this.holding == 1 && this.pedastalbook && this.bookstate != 2) {
+			if(this.bookstate % 2 == 0) haxegon_Gfx.drawimage((this.pedastalx + 1) * 28,this.pedastaly * 19 + offy,"icon_paint"); else haxegon_Gfx.drawimage((this.pedastalx - 1) * 28,this.pedastaly * 19 + offy,"icon_paint");
+		}
+		if(this.pedastalbook) haxegon_Gfx.drawimage(this.pedastalx * 28,(this.pedastaly + 1) * 19 + offy,"icon_read");
+		haxegon_Gfx.drawimage(this.waterpitx * 28,(this.waterpity + 1) * 19 + offy,"icon_steps");
+		haxegon_Gfx.drawimage(this.firepitx * 28,(this.firepity + 1) * 19 + offy,"icon_steps");
+		if(this.floorbook && !this.bookfootprints) haxegon_Gfx.drawimage((this.brushx - 1) * 28,this.brushy * 19 + offy,"icon_steps");
+		if((this.floorbrush || this.floorbook) && this.holding == -1) haxegon_Gfx.drawimage(this.brushx * 28,(this.brushy + 1) * 19 + offy,"icon_take");
+		if(this.holding >= 0 && !this.floorbrush && !this.floorbook) haxegon_Gfx.drawimage(this.brushx * 28,(this.brushy - 1) * 19 + offy,"icon_drop");
+		if(this.holding >= 0 && !this.pedastalbrush && !this.pedastalbook) haxegon_Gfx.drawimage(this.pedastalx * 28,(this.pedastaly - 1) * 19 + offy,"icon_drop");
+		haxegon_Gfx.drawimage(this.exitx * 28,this.exity * 19 + offy,"icon_exit");
 		if(this.t / 10 % 2 < 1) {
 			haxegon_Gfx.drawimage(85,77 + offy,"waterpit");
 			haxegon_Gfx.drawimage(197,71 + offy,"firepit");
@@ -2216,8 +2789,34 @@ Main.prototype = {
 			haxegon_Gfx.drawimage(85,77 + offy,"waterpit2");
 			haxegon_Gfx.drawimage(197,71 + offy,"firepit2");
 		}
-		if(frame == 0) haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"player"); else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"playerwalk" + frame);
-		haxegon_Gfx.drawimage(150,125 + offy,"smallbook");
+		if(frame == 0) {
+			if(this.cutscene == 1 && this.cutscenetimer > 0) {
+				haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"burn/player_burn_" + (this.cutscenetimer + 1));
+				if(this.cutscenetimer < 17) this.cutscenetimer++;
+			} else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"player");
+		} else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"playerwalk" + frame);
+		if(this.holding == 0) haxegon_Gfx.drawimage(this.px + 6 + this.poffsetx,this.py + 10 + this.poffsety + offy,"smallbook");
+		if(this.holding == 1) haxegon_Gfx.drawimage(this.px + 9 + this.poffsetx,this.py + 1 + this.poffsety + offy,"brush");
+		if(this.pedastalbook) haxegon_Gfx.drawimage(150,125 + offy,"smallbook");
+		if(this.pedastalbrush) haxegon_Gfx.drawimage(152,116 + offy,"brush");
+		if(this.floorbook) haxegon_Gfx.drawimage(233,157 + offy,"smallbook");
+		if(this.floorbrush) haxegon_Gfx.drawimage(235,153 + offy,"brush");
+		if(this.waterbook) {
+			if(this.bookanimtimer <= 9) {
+				haxegon_Gfx.drawimage(94,76 + offy,"bookanim_" + this.bookanimtimer);
+				this.bookanimtimer++;
+			} else haxegon_Gfx.drawimage(94,76 + offy,"smallbook");
+		}
+		if(this.waterbrush) haxegon_Gfx.drawimage(95,72 + offy,"brush");
+		if(haxegon_Convert.toint(this.py / 19) == 4) {
+			if(this.t / 10 % 2 < 1) {
+				haxegon_Gfx.drawimage(85,77 + offy,"waterpit_fg");
+				haxegon_Gfx.drawimage(197,71 + offy,"firepit_fg");
+			} else {
+				haxegon_Gfx.drawimage(85,77 + offy,"waterpit2_fg");
+				haxegon_Gfx.drawimage(197,71 + offy,"firepit2_fg");
+			}
+		}
 		if(this.showbook) this.DrawBook();
 		if(this.showtext.length > 0) this.DrawTextBox();
 	}

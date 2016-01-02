@@ -54,7 +54,15 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/book_blank_l_stepped.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/book_blank_r.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/book_blank_r_stepped.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -70,7 +78,15 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/book_default_l_stepped.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/book_default_r.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/book_default_r_stepped.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -78,7 +94,15 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/book_rewritten_l_stepped.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/book_rewritten_r.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/book_rewritten_r_stepped.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -86,7 +110,91 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/book_scored_l_stepped.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/book_scored_r.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/book_scored_r_stepped.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_3.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_4.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_5.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_6.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_7.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_8.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookanim_9.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_3.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_4.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_5.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_6.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_7.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/bookburn/book_burn_8.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -98,7 +206,83 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
-		urls.push ("data/graphics/fg.png");
+		urls.push ("data/graphics/burn/player_burn_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_10.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_11.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_12.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_13.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_14.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_15.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_16.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_3.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_4.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_5.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_6.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_7.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_8.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/burn/player_burn_9.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/fg_0.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/fg_1.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/fg_2.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -110,7 +294,19 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/firepit2_fg.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/firepit_fg.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/icon_drop.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_exit.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -122,7 +318,19 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/icon_steps.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/icon_take.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/icon_unlock.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/key.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -147,6 +355,14 @@ class ApplicationMain {
 		
 		
 		urls.push ("data/graphics/waterpit2.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/waterpit2_fg.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
+		urls.push ("data/graphics/waterpit_fg.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
@@ -211,7 +427,7 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "155",
+			build: "204",
 			company: "Your name here",
 			file: "drawingimages",
 			fps: 60,
