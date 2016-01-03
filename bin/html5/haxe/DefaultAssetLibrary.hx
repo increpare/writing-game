@@ -136,6 +136,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		
 		
+		
 		#end
 		
 		#if flash
@@ -288,6 +289,8 @@ class DefaultAssetLibrary extends AssetLibrary {
 		type.set ("data/graphics/icon_steps.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
 		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
+		className.set ("data/graphics/icon_talk.png", __ASSET__data_graphics_icon_talk_png);
+		type.set ("data/graphics/icon_talk.png", AssetType.IMAGE);
 		className.set ("data/graphics/icon_unlock.png", __ASSET__data_graphics_icon_unlock_png);
 		type.set ("data/graphics/icon_unlock.png", AssetType.IMAGE);
 		className.set ("data/graphics/key.png", __ASSET__data_graphics_key_png);
@@ -609,6 +612,10 @@ class DefaultAssetLibrary extends AssetLibrary {
 		path.set (id, id);
 		
 		type.set (id, AssetType.IMAGE);
+		id = "data/graphics/icon_talk.png";
+		path.set (id, id);
+		
+		type.set (id, AssetType.IMAGE);
 		id = "data/graphics/icon_unlock.png";
 		path.set (id, id);
 		
@@ -888,6 +895,9 @@ class DefaultAssetLibrary extends AssetLibrary {
 		
 		className.set ("data/graphics/icon_take.png", __ASSET__data_graphics_icon_take_png);
 		type.set ("data/graphics/icon_take.png", AssetType.IMAGE);
+		
+		className.set ("data/graphics/icon_talk.png", __ASSET__data_graphics_icon_talk_png);
+		type.set ("data/graphics/icon_talk.png", AssetType.IMAGE);
 		
 		className.set ("data/graphics/icon_unlock.png", __ASSET__data_graphics_icon_unlock_png);
 		type.set ("data/graphics/icon_unlock.png", AssetType.IMAGE);
@@ -1636,6 +1646,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_read_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_steps_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_take_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
+@:keep @:bind #if display private #end class __ASSET__data_graphics_icon_talk_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_icon_unlock_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_key_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
 @:keep @:bind #if display private #end class __ASSET__data_graphics_player_png extends flash.display.BitmapData { public function new () { super (0, 0, true, 0); } }
@@ -1652,6 +1663,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 
 
 @:keep #if display private #end class __ASSET__data_fonts_opensans_opensans_ttf extends lime.text.Font { public function new () { super (); name = "Open Sans"; } } 
+
 
 
 
@@ -1817,6 +1829,7 @@ class DefaultAssetLibrary extends AssetLibrary {
 @:image("data/graphics/icon_read.png") #if display private #end class __ASSET__data_graphics_icon_read_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_steps.png") #if display private #end class __ASSET__data_graphics_icon_steps_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_take.png") #if display private #end class __ASSET__data_graphics_icon_take_png extends lime.graphics.Image {}
+@:image("data/graphics/icon_talk.png") #if display private #end class __ASSET__data_graphics_icon_talk_png extends lime.graphics.Image {}
 @:image("data/graphics/icon_unlock.png") #if display private #end class __ASSET__data_graphics_icon_unlock_png extends lime.graphics.Image {}
 @:image("data/graphics/key.png") #if display private #end class __ASSET__data_graphics_key_png extends lime.graphics.Image {}
 @:image("data/graphics/player.png") #if display private #end class __ASSET__data_graphics_player_png extends lime.graphics.Image {}

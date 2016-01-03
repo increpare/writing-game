@@ -171,6 +171,8 @@ ApplicationMain.create = function() {
 	types.push("IMAGE");
 	urls.push("data/graphics/icon_take.png");
 	types.push("IMAGE");
+	urls.push("data/graphics/icon_talk.png");
+	types.push("IMAGE");
 	urls.push("data/graphics/icon_unlock.png");
 	types.push("IMAGE");
 	urls.push("data/graphics/key.png");
@@ -213,7 +215,7 @@ ApplicationMain.init = function() {
 	if(total == 0) ApplicationMain.start();
 };
 ApplicationMain.main = function() {
-	ApplicationMain.config = { build : "204", company : "Your name here", file : "drawingimages", fps : 60, name : "Drawing Images", orientation : "landscape", packageName : "com.haxegon.drawingimages", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "Drawing Images", vsync : true, width : 768, x : null, y : null}]};
+	ApplicationMain.config = { build : "274", company : "increpare", file : "drawingimages", fps : 60, name : "writing", orientation : "landscape", packageName : "com.increpare.writing", version : "1.0.0", windows : [{ antialiasing : 0, background : 0, borderless : false, depthBuffer : false, display : 0, fullscreen : false, hardware : false, height : 480, parameters : "{}", resizable : true, stencilBuffer : true, title : "writing", vsync : true, width : 768, x : null, y : null}]};
 };
 ApplicationMain.start = function() {
 	var hasMain = false;
@@ -1941,6 +1943,9 @@ var DefaultAssetLibrary = function() {
 	id = "data/graphics/icon_take.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
+	id = "data/graphics/icon_talk.png";
+	this.path.set(id,id);
+	this.type.set(id,"IMAGE");
 	id = "data/graphics/icon_unlock.png";
 	this.path.set(id,id);
 	this.type.set(id,"IMAGE");
@@ -2327,6 +2332,9 @@ _$List_ListIterator.prototype = {
 	,__class__: _$List_ListIterator
 };
 var Main = function() {
+	this.finished = false;
+	this.startwritetimer = 0;
+	this.bookburntimer = -1;
 	this.bookanimtimer = 0;
 	this.cutscenetimer = 0;
 	this.cutscene = -1;
@@ -2351,8 +2359,8 @@ var Main = function() {
 	this.dx = 0;
 	this.brushgy = 8;
 	this.brushgx = 7;
-	this.py = 285;
-	this.px = 168;
+	this.py = 380;
+	this.px = 140;
 	this.keyy = 14;
 	this.keyx = 7;
 	this.doory = 11;
@@ -2463,8 +2471,8 @@ var Main = function() {
 	haxegon_Gfx.loadimage("bookburn/book_burn_7");
 	haxegon_Gfx.loadimage("bookburn/book_burn_8");
 	haxe_Log.trace("CCC",{ fileName : "Main.hx", lineNumber : 192, className : "Main", methodName : "new"});
-	this.maph = haxegon_Gfx.imageheight("bgtiles");
-	this.mapw = haxegon_Gfx.imagewidth("bgtiles");
+	this.maph = haxegon_Gfx.imageheight("fg_0");
+	this.mapw = haxegon_Gfx.imagewidth("fg_0");
 	this.pw = haxegon_Gfx.imagewidth("player");
 	this.ph = haxegon_Gfx.imageheight("player");
 	this.pwmid = haxegon_Convert.toint(this.pw / 2);
@@ -2491,7 +2499,6 @@ Main.prototype = {
 		this.statuesad = false;
 	}
 	,checkCollision: function(tx,ty) {
-		haxe_Log.trace(tx + "," + ty,{ fileName : "Main.hx", lineNumber : 208, className : "Main", methodName : "checkCollision"});
 		if(tx < 0 || tx >= this.gridw || ty < 0 || ty >= this.gridh || this.tilemap[tx + this.gridw * ty] == 1 || !this.unlocked && this.tilemap[tx + this.gridw * ty] == 2 || (this.floorbook || this.floorbrush) && tx == this.brushx && ty == this.brushy || !this.haskey && tx == this.keyx && ty == this.keyy) {
 			this.dx = 0;
 			this.dy = 0;
@@ -2513,7 +2520,7 @@ Main.prototype = {
 			rightpage = "book_scored_r";
 		} else if(this.bookstate == 2) {
 			leftpage = "book_rewritten_l";
-			rightpage = "book_rewriten_r";
+			rightpage = "book_rewritten_r";
 		} else if(this.bookstate == 3) {
 			leftpage = "book_blank_l";
 			rightpage = "book_blank_r";
@@ -2550,44 +2557,46 @@ Main.prototype = {
 		var width = haxegon_Convert.toint(haxegon_Text.len(s));
 		var margin = 2;
 		this.showtextframe++;
+		var boxoffset = -60;
 		if(this.showtextframe < 15) {
 			width = haxegon_Convert.toint(haxegon_Convert.tofloat(width * this.showtextframe) / 15);
-			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
-			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
+			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,boxoffset + haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
+			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),boxoffset + haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
 		} else {
 			haxegon_Text.align(haxegon_Text.CENTER);
-			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
-			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
-			haxegon_Text.display(haxegon_Gfx.screenwidthmid - margin,haxegon_Gfx.screenheightmid - height,s);
+			haxegon_Gfx.fillbox(haxegon_Gfx.screenwidthmid - width / 2 - margin - 1,boxoffset + haxegon_Gfx.screenheightmid - height / 2 - margin - 1,width + margin * 3 + 2,height + margin * 2 + 2,16777215);
+			haxegon_Gfx.fillbox(haxegon_Convert.toint(haxegon_Gfx.screenwidthmid - width / 2 - margin),boxoffset + haxegon_Convert.toint(haxegon_Gfx.screenheightmid - height / 2 - margin),width + margin * 3,height + margin * 2,0);
+			haxegon_Text.display(haxegon_Gfx.screenwidthmid - margin,boxoffset + haxegon_Gfx.screenheightmid - height,s);
 		}
 	}
 	,StartReadBook: function() {
 		if(!this.showbook) {
 			this.showbook = true;
+			this.initbookpause = 5;
 			this.bookframe = 0;
 			this.initbookpause = 5;
-			haxe_Log.trace("StartReadBook",{ fileName : "Main.hx", lineNumber : 336, className : "Main", methodName : "StartReadBook"});
+			haxe_Log.trace("StartReadBook",{ fileName : "Main.hx", lineNumber : 338, className : "Main", methodName : "StartReadBook"});
 		}
 	}
 	,StartWaterpitSacrifice: function() {
-		haxe_Log.trace("StartWaterpitSacrifice",{ fileName : "Main.hx", lineNumber : 340, className : "Main", methodName : "StartWaterpitSacrifice"});
+		haxe_Log.trace("StartWaterpitSacrifice",{ fileName : "Main.hx", lineNumber : 342, className : "Main", methodName : "StartWaterpitSacrifice"});
 		this.cutscene = 0;
 		this.cutscenetimer = 0;
 		this.dy = -1;
 		this.py -= this.dy;
 	}
 	,StartFirepitSacrifice: function() {
-		haxe_Log.trace("StartFirepitSacrifice",{ fileName : "Main.hx", lineNumber : 347, className : "Main", methodName : "StartFirepitSacrifice"});
+		haxe_Log.trace("StartFirepitSacrifice",{ fileName : "Main.hx", lineNumber : 349, className : "Main", methodName : "StartFirepitSacrifice"});
 		this.cutscene = 1;
 		this.cutscenetimer = 0;
 		this.dy = -1;
-		this.py -= this.dy;
+		this.py -= 2 * this.dy;
 	}
 	,DropItemInWaterpit: function() {
 		if(this.holding == 0) {
 			this.holding = -1;
-			if(this.bookstate != 0) this.bookanimtimer = 9;
-			this.bookstate = 0;
+			if(this.bookstate == 3) this.bookanimtimer = 1000;
+			this.bookstate = 3;
 			this.waterbook = true;
 		}
 		if(this.holding == 1) {
@@ -2595,30 +2604,38 @@ Main.prototype = {
 			this.waterbrush = true;
 			this.cleanedbrush = true;
 		}
-		haxe_Log.trace("DropItemInWaterpit",{ fileName : "Main.hx", lineNumber : 369, className : "Main", methodName : "DropItemInWaterpit"});
+		haxe_Log.trace("DropItemInWaterpit",{ fileName : "Main.hx", lineNumber : 371, className : "Main", methodName : "DropItemInWaterpit"});
 	}
 	,DropItemInFirepit: function() {
-		haxe_Log.trace("DropItemInFirepit",{ fileName : "Main.hx", lineNumber : 372, className : "Main", methodName : "DropItemInFirepit"});
-		if(this.holding == 0) {
-		} else if(this.holding == 1) {
+		haxe_Log.trace("DropItemInFirepit",{ fileName : "Main.hx", lineNumber : 376, className : "Main", methodName : "DropItemInFirepit"});
+		if(this.holding == 0) this.bookburntimer = 0; else if(this.holding == 1) {
 		}
 		this.holding = -1;
 	}
 	,StartWriteBook: function() {
 		this.statuesad = true;
-		if(this.bookstate == 0) this.bookstate = 1; else if(this.bookstate == 1) this.bookstate = 2; else if(this.bookstate == 3) this.bookstate = 0;
-		haxe_Log.trace("StartWriteBook",{ fileName : "Main.hx", lineNumber : 389, className : "Main", methodName : "StartWriteBook"});
+		this.cutscene = 2;
+		this.cutscenetimer = 0;
+		this.showbook = true;
+		this.initbookpause = 0;
+		this.bookframe = 5;
+		haxe_Log.trace("StartWriteBook",{ fileName : "Main.hx", lineNumber : 393, className : "Main", methodName : "StartWriteBook"});
 	}
 	,StartStepOnBook: function() {
-		haxe_Log.trace("StartStepOnBook",{ fileName : "Main.hx", lineNumber : 392, className : "Main", methodName : "StartStepOnBook"});
+		haxe_Log.trace("StartStepOnBook",{ fileName : "Main.hx", lineNumber : 396, className : "Main", methodName : "StartStepOnBook"});
+		this.bookfootprints = true;
+		this.cutscene = 3;
+		this.cutscenetimer = 0;
+		this.dx = 1;
+		this.px += 2 * this.dx;
 	}
 	,ProcessAction: function() {
+		this.showtext = "";
 		var tx = haxegon_Convert.toint(this.px / 28);
 		var ty = haxegon_Convert.toint(this.py / 19);
 		if(tx == this.waterpitx + 1 && ty == this.waterpity) {
-			if(this.holding >= 0 && !this.waterbook && !this.waterbrush) this.DropItemInWaterpit();
+			if(this.holding == 0 && !this.waterbook && !this.waterbrush) this.DropItemInWaterpit();
 		}
-		if(tx == this.waterpitx && ty == this.waterpity + 1) this.StartWaterpitSacrifice();
 		if(tx == this.waterpitx && ty == this.waterpity - 1) {
 			if(this.waterbook) {
 				this.holding = 0;
@@ -2632,16 +2649,16 @@ Main.prototype = {
 		if(tx == this.firepitx - 1 && ty == this.firepity) {
 			if(this.holding >= 0) this.DropItemInFirepit();
 		}
-		if(tx == this.firepitx && ty == this.firepity + 1) this.StartFirepitSacrifice();
+		if(tx == this.firepitx && ty == this.firepity + 1 && this.holding == -1) this.StartFirepitSacrifice();
 		if(tx == this.pedastalx - 1 && ty == this.pedastaly) {
-			if(this.holding == -1) {
+			if(this.holding == -1 && (this.pedastalbook || this.pedastalbrush)) {
 				if(this.pedastalbook) {
 					this.holding = 0;
+					this.statuesad = true;
 					this.pedastalbook = false;
 				}
 				if(this.pedastalbrush) {
 					this.holding = 1;
-					this.statuesad = true;
 					this.pedastalbrush = false;
 				}
 			}
@@ -2664,7 +2681,7 @@ Main.prototype = {
 				}
 			}
 		}
-		if(tx == this.brushx && ty == this.brushy) {
+		if(tx == this.brushx - 1 && ty == this.brushy) {
 			if(this.floorbook && !this.bookfootprints) this.StartStepOnBook();
 		}
 		if(tx == this.brushx && ty == this.brushy + 1) {
@@ -2691,12 +2708,17 @@ Main.prototype = {
 				}
 			}
 		}
+		if(tx == this.exitx && (ty == this.exity || ty == this.exity + 1)) {
+			this.dy = 1;
+			this.py += 2 * this.dy;
+			ty++;
+		}
 		if(tx == this.keyx && ty == this.keyy + 1) {
 			if(!this.haskey) this.haskey = true;
 		}
 		if(tx == this.doorx && ty == this.doory + 1) {
 			if(this.haskey) this.unlocked = true;
-			haxe_Log.trace("unlock door",{ fileName : "Main.hx", lineNumber : 500, className : "Main", methodName : "ProcessAction"});
+			haxe_Log.trace("unlock door",{ fileName : "Main.hx", lineNumber : 516, className : "Main", methodName : "ProcessAction"});
 		}
 	}
 	,update: function() {
@@ -2715,34 +2737,55 @@ Main.prototype = {
 		if(this.px % 28 == 0 && (this.py % 19 == 0 || this.py % 19 == 1)) {
 			if(this.cutscene == -1) {
 				this.ProcessAction();
-				if(haxegon_Input.pressed(haxegon_Key.UP)) {
-					this.dy = -1;
-					if(this.checkCollision(tx,--ty)) ty++;
-				}
-				if(haxegon_Input.pressed(haxegon_Key.DOWN)) {
-					this.dy = 1;
-					if(this.checkCollision(tx,++ty)) ty--;
-				}
-				if(haxegon_Input.pressed(haxegon_Key.LEFT)) {
-					this.dx = -1;
-					if(this.checkCollision(--tx,ty)) tx++;
-				}
-				if(haxegon_Input.pressed(haxegon_Key.RIGHT)) {
-					this.dx = 1;
-					if(this.checkCollision(++tx,ty)) tx--;
+				if(this.cutscene == -1) {
+					if(haxegon_Input.pressed(haxegon_Key.UP)) {
+						this.dy = -1;
+						if(this.checkCollision(tx,--ty)) ty++;
+					}
+					if(haxegon_Input.pressed(haxegon_Key.DOWN)) {
+						this.dy = 1;
+						if(this.checkCollision(tx,++ty)) ty--;
+					}
+					if(haxegon_Input.pressed(haxegon_Key.LEFT)) {
+						this.dx = -1;
+						if(this.checkCollision(--tx,ty)) tx++;
+					}
+					if(haxegon_Input.pressed(haxegon_Key.RIGHT)) {
+						this.dx = 1;
+						if(this.checkCollision(++tx,ty)) tx--;
+					}
 				}
 			} else if(this.cutscene == 0) {
+				haxe_Log.trace("X",{ fileName : "Main.hx", lineNumber : 568, className : "Main", methodName : "update"});
 				if(this.cutscenetimer == 0) {
+					haxe_Log.trace("A",{ fileName : "Main.hx", lineNumber : 570, className : "Main", methodName : "update"});
 					this.dy = -1;
-					this.py -= this.dy;
+					this.py += 2 * this.dy;
+					ty--;
 					this.cutscenetimer++;
-				} else if(this.cutscenetimer == 1) this.cutscene = -1;
+				} else {
+					haxe_Log.trace("C",{ fileName : "Main.hx", lineNumber : 576, className : "Main", methodName : "update"});
+					this.cutscene = -1;
+				}
 			} else if(this.cutscene == 1) {
 				if(this.cutscenetimer == 0) {
 					this.dy = -1;
-					this.py -= this.dy;
+					this.py += 2 * this.dy;
 					this.cutscenetimer++;
-				} else if(this.cutscenetimer > 0) {
+				} else if(this.cutscenetimer > 0) this.dy = 0;
+			} else if(this.cutscene == 2) {
+				this.cutscenetimer++;
+				this.bookframe = 100;
+				if(this.cutscenetimer == 20) {
+					if(this.bookstate == 0) this.bookstate = 1; else if(this.bookstate == 1) this.bookstate = 2; else if(this.bookstate == 3) this.bookstate = 0;
+				}
+				if(this.cutscenetimer > 30) this.cutscene = -1;
+			} else if(this.cutscene == 3) {
+				if(this.cutscenetimer == 0) {
+					this.dx = -1;
+					this.px += 2 * this.dy;
+					this.cutscenetimer++;
+					this.cutscene = -1;
 				}
 			}
 		}
@@ -2766,17 +2809,18 @@ Main.prototype = {
 		}
 		if(this.haskey && !this.unlocked) haxegon_Gfx.drawimage(this.doorx * 28,(this.doory + 1) * 19 + offy,"icon_unlock");
 		if(this.holding >= 0) {
-			if(!this.waterbook && !this.waterbrush) haxegon_Gfx.drawimage((this.waterpitx + 1) * 28,this.waterpity * 19 + offy,"icon_drop");
+			if(!this.waterbook && !this.waterbrush && this.holding == 0) haxegon_Gfx.drawimage((this.waterpitx + 1) * 28,this.waterpity * 19 + offy,"icon_drop");
 			haxegon_Gfx.drawimage((this.firepitx - 1) * 28,this.firepity * 19 + offy,"icon_drop");
 		}
 		if(this.waterbrush || this.waterbook) haxegon_Gfx.drawimage(this.waterpitx * 28,(this.waterpity - 1) * 19 + offy,"icon_take");
-		if(this.holding == -1) haxegon_Gfx.drawimage((this.pedastalx - 1) * 28,this.pedastaly * 19 + offy,"icon_take");
+		if(this.holding == -1 && (this.pedastalbook || this.pedastalbrush)) haxegon_Gfx.drawimage((this.pedastalx - 1) * 28,this.pedastaly * 19 + offy,"icon_take");
 		if(this.holding == 1 && this.pedastalbook && this.bookstate != 2) {
 			if(this.bookstate % 2 == 0) haxegon_Gfx.drawimage((this.pedastalx + 1) * 28,this.pedastaly * 19 + offy,"icon_paint"); else haxegon_Gfx.drawimage((this.pedastalx - 1) * 28,this.pedastaly * 19 + offy,"icon_paint");
 		}
 		if(this.pedastalbook) haxegon_Gfx.drawimage(this.pedastalx * 28,(this.pedastaly + 1) * 19 + offy,"icon_read");
-		haxegon_Gfx.drawimage(this.waterpitx * 28,(this.waterpity + 1) * 19 + offy,"icon_steps");
-		haxegon_Gfx.drawimage(this.firepitx * 28,(this.firepity + 1) * 19 + offy,"icon_steps");
+		if(!this.waterbook && !this.waterbrush && this.holding == -1) {
+		}
+		if(this.holding == -1) haxegon_Gfx.drawimage(this.firepitx * 28,(this.firepity + 1) * 19 + offy,"icon_steps");
 		if(this.floorbook && !this.bookfootprints) haxegon_Gfx.drawimage((this.brushx - 1) * 28,this.brushy * 19 + offy,"icon_steps");
 		if((this.floorbrush || this.floorbook) && this.holding == -1) haxegon_Gfx.drawimage(this.brushx * 28,(this.brushy + 1) * 19 + offy,"icon_take");
 		if(this.holding >= 0 && !this.floorbrush && !this.floorbook) haxegon_Gfx.drawimage(this.brushx * 28,(this.brushy - 1) * 19 + offy,"icon_drop");
@@ -2789,21 +2833,30 @@ Main.prototype = {
 			haxegon_Gfx.drawimage(85,77 + offy,"waterpit2");
 			haxegon_Gfx.drawimage(197,71 + offy,"firepit2");
 		}
+		if(this.bookburntimer >= 0) {
+			var bookburnspeed = 10;
+			this.bookburntimer++;
+			var f = haxegon_Convert.toint(this.bookburntimer / bookburnspeed);
+			if(f < 9) haxegon_Gfx.drawimage(206,76 + offy,"bookburn/book_burn_" + f); else this.bookburntimer = -1;
+		}
 		if(frame == 0) {
 			if(this.cutscene == 1 && this.cutscenetimer > 0) {
-				haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"burn/player_burn_" + (this.cutscenetimer + 1));
-				if(this.cutscenetimer < 17) this.cutscenetimer++;
+				var burnanimspeed = 10;
+				haxegon_Gfx.drawimage(this.px + this.poffsetx - 5,this.py + this.poffsety + offy - 5,"burn/player_burn_" + haxegon_Convert.toint((this.cutscenetimer + 1) / burnanimspeed));
+				if(this.cutscenetimer < 16 * burnanimspeed) this.cutscenetimer++; else this.showtext = "I am more than what you hate. Accept me, God!";
 			} else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"player");
 		} else haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + this.poffsety + offy,"playerwalk" + frame);
 		if(this.holding == 0) haxegon_Gfx.drawimage(this.px + 6 + this.poffsetx,this.py + 10 + this.poffsety + offy,"smallbook");
 		if(this.holding == 1) haxegon_Gfx.drawimage(this.px + 9 + this.poffsetx,this.py + 1 + this.poffsety + offy,"brush");
+		if(this.haskey && !this.unlocked) haxegon_Gfx.drawimage(this.px + this.poffsetx,this.py + 1 + this.poffsety + offy,"key");
 		if(this.pedastalbook) haxegon_Gfx.drawimage(150,125 + offy,"smallbook");
 		if(this.pedastalbrush) haxegon_Gfx.drawimage(152,116 + offy,"brush");
 		if(this.floorbook) haxegon_Gfx.drawimage(233,157 + offy,"smallbook");
 		if(this.floorbrush) haxegon_Gfx.drawimage(235,153 + offy,"brush");
 		if(this.waterbook) {
-			if(this.bookanimtimer <= 9) {
-				haxegon_Gfx.drawimage(94,76 + offy,"bookanim_" + this.bookanimtimer);
+			var bookanimspeed = 5;
+			if(this.bookanimtimer <= bookanimspeed * 9) {
+				haxegon_Gfx.drawimage(94,76 + offy,"bookanim_" + haxegon_Convert.toint(this.bookanimtimer / bookanimspeed));
 				this.bookanimtimer++;
 			} else haxegon_Gfx.drawimage(94,76 + offy,"smallbook");
 		}
@@ -15746,6 +15799,7 @@ lime_graphics_utils_ImageCanvasUtil.createCanvas = function(image,width,height) 
 		} else buffer.__srcContext = buffer.__srcCanvas.getContext("2d");
 		buffer.__srcContext.mozImageSmoothingEnabled = false;
 		buffer.__srcContext.msImageSmoothingEnabled = false;
+		buffer.__srcContext.webkitImageSmoothingEnabled = false;
 		buffer.__srcContext.imageSmoothingEnabled = false;
 	}
 };
@@ -23647,12 +23701,14 @@ openfl__$internal_renderer_canvas_CanvasBitmap.render = function(bitmap,renderSe
 		if(!bitmap.smoothing) {
 			context.mozImageSmoothingEnabled = false;
 			context.msImageSmoothingEnabled = false;
+			context.webkitImageSmoothingEnabled = false;
 			context.imageSmoothingEnabled = false;
 		}
 		if(scrollRect == null) context.drawImage(bitmap.bitmapData.image.get_src(),0,0); else context.drawImage(bitmap.bitmapData.image.get_src(),scrollRect.x,scrollRect.y,scrollRect.width,scrollRect.height,scrollRect.x,scrollRect.y,scrollRect.width,scrollRect.height);
 		if(!bitmap.smoothing) {
 			context.mozImageSmoothingEnabled = true;
 			context.msImageSmoothingEnabled = true;
+			context.webkitImageSmoothingEnabled = true;
 			context.imageSmoothingEnabled = true;
 		}
 		if(bitmap.__mask != null) renderSession.maskManager.popMask();
@@ -24904,10 +24960,12 @@ openfl__$internal_renderer_canvas_CanvasTextField.render = function(textField,re
 				if(textEngine.antiAliasType != openfl_text_AntiAliasType.ADVANCED || textEngine.gridFitType != openfl_text_GridFitType.PIXEL) {
 					graphics.__context.mozImageSmoothingEnabled = true;
 					graphics.__context.msImageSmoothingEnabled = true;
+					graphics.__context.webkitImageSmoothingEnabled = true;
 					graphics.__context.imageSmoothingEnabled = true;
 				} else {
 					graphics.__context.mozImageSmoothingEnabled = false;
 					graphics.__context.msImageSmoothingEnabled = false;
+					graphics.__context.webkitImageSmoothingEnabled = false;
 					graphics.__context.imageSmoothingEnabled = false;
 				}
 				if(textEngine.border || textEngine.background) {
@@ -25045,6 +25103,7 @@ openfl__$internal_renderer_dom_DOMBitmap.renderCanvas = function(bitmap,renderSe
 		if(!bitmap.smoothing) {
 			bitmap.__context.mozImageSmoothingEnabled = false;
 			bitmap.__context.msImageSmoothingEnabled = false;
+			bitmap.__context.webkitImageSmoothingEnabled = false;
 			bitmap.__context.imageSmoothingEnabled = false;
 		}
 		openfl__$internal_renderer_dom_DOMRenderer.initializeElement(bitmap,bitmap.__canvas,renderSession);
@@ -30019,6 +30078,7 @@ openfl_display_BitmapData.prototype = {
 		if(!smoothing) {
 			buffer.__srcContext.mozImageSmoothingEnabled = false;
 			buffer.__srcContext.msImageSmoothingEnabled = false;
+			buffer.__srcContext.webkitImageSmoothingEnabled = false;
 			buffer.__srcContext.imageSmoothingEnabled = false;
 		}
 		if(clipRect != null) renderSession.maskManager.pushRect(clipRect,new openfl_geom_Matrix());
@@ -30031,6 +30091,7 @@ openfl_display_BitmapData.prototype = {
 		if(!smoothing) {
 			buffer.__srcContext.mozImageSmoothingEnabled = true;
 			buffer.__srcContext.msImageSmoothingEnabled = true;
+			buffer.__srcContext.webkitImageSmoothingEnabled = true;
 			buffer.__srcContext.imageSmoothingEnabled = true;
 		}
 		if(clipRect != null) renderSession.maskManager.popMask();
@@ -39295,12 +39356,14 @@ openfl_text_TextField.prototype = $extend(openfl_display_InteractiveObject.proto
 			if(smoothingEnabled) {
 				renderSession.context.mozImageSmoothingEnabled = false;
 				renderSession.context.msImageSmoothingEnabled = false;
+				renderSession.context.webkitImageSmoothingEnabled = false;
 				renderSession.context.imageSmoothingEnabled = false;
 			}
 			openfl_display_InteractiveObject.prototype.__renderCanvas.call(this,renderSession);
 			if(smoothingEnabled) {
 				renderSession.context.mozImageSmoothingEnabled = true;
 				renderSession.context.msImageSmoothingEnabled = true;
+				renderSession.context.webkitImageSmoothingEnabled = true;
 				renderSession.context.imageSmoothingEnabled = true;
 			}
 		} else openfl_display_InteractiveObject.prototype.__renderCanvas.call(this,renderSession);

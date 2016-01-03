@@ -78,8 +78,8 @@ class Main {
 	var keyx =7;
 	var keyy =14;
 
-	var px:Int=cellw*(7-1);//5
-	var py:Int=cellh*(15);//20
+	var px:Int=cellw*(5);//5
+	var py:Int=cellh*(20);//20
 
 	var brushgx=7;
 	var brushgy=8;
@@ -151,7 +151,7 @@ class Main {
 		Gfx.loadimage("icon_paint");
 		Gfx.loadimage("icon_read");
 		Gfx.loadimage("icon_steps");		
-		Gfx.loadimage("icon_take");	
+		Gfx.loadimage("icon_take");		
 		Gfx.loadimage("icon_unlock");	
 		Gfx.loadimage("key");
 		Gfx.loadimage("player");
@@ -190,8 +190,8 @@ class Main {
 		Gfx.loadimage("bookburn/book_burn_7");
 		Gfx.loadimage("bookburn/book_burn_8");
 		trace("CCC");			
-		maph=Gfx.imageheight("bgtiles");
-		mapw=Gfx.imagewidth("bgtiles");
+		maph=Gfx.imageheight("fg_0");
+		mapw=Gfx.imagewidth("fg_0");
 		pw=Gfx.imagewidth("player");
 		ph=Gfx.imageheight("player");
 		
@@ -205,7 +205,7 @@ class Main {
 	}
 	
 	function checkCollision(tx:Int,ty:Int):Bool{			
-		trace(tx+","+ty);
+		//trace(tx+","+ty);
 	  	if (
 	  			tx<0 ||
 	  			tx>=gridw ||
@@ -296,16 +296,16 @@ class Main {
   	var width = Convert.toint(Text.len(s));  	
 	var margin=2;
   	showtextframe++;
-
+  	var boxoffset:Int=-60;
   	if (showtextframe<15) {
   		width = Convert.toint(Convert.tofloat(width*showtextframe)/15);
-	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
-	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
+	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,boxoffset+Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
+	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),boxoffset+Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
   	} else {
 	  	Text.align(Text.CENTER);
-	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
-	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
-	  	Text.display(Gfx.screenwidthmid-margin,Gfx.screenheightmid-height,s);
+	  	Gfx.fillbox(Gfx.screenwidthmid-width/2-margin-1,boxoffset+Gfx.screenheightmid-height/2-margin-1,width+margin*3+2,height+margin*2+2,0xffffff);
+	  	Gfx.fillbox(Convert.toint(Gfx.screenwidthmid-width/2-margin),boxoffset+Convert.toint(Gfx.screenheightmid-height/2-margin),width+margin*3,height+margin*2,0x000000);
+	  	Text.display(Gfx.screenwidthmid-margin,boxoffset+Gfx.screenheightmid-height,s);
 	  }
   }
 
@@ -318,6 +318,7 @@ class Main {
   var pedastalx :Int=5;
   var pedastaly :Int=7;
   
+
   var brushx :Int=8;
   var brushy :Int=8;
 
@@ -331,6 +332,7 @@ class Main {
 	function StartReadBook(){
 		if (!showbook){
 			showbook=true;
+			initbookpause=5;
 			bookframe=0;
 			initbookpause=5;
 			trace("StartReadBook");
@@ -348,17 +350,17 @@ class Main {
 		cutscene=1;
 		cutscenetimer=0;
 		dy=-1;
-		py-=dy;
+		py-=2*dy;
 	}
 
 	var bookanimtimer=0;
 	function DropItemInWaterpit(){
 		if (holding==0){
 			holding=-1;
-			if (bookstate!=0){
-				bookanimtimer=9;
+			if (bookstate==3){
+				bookanimtimer=1000;
 			}
-			bookstate=0;
+			bookstate=3;
 			waterbook=true;
 		}
 		if (holding==1){
@@ -368,41 +370,50 @@ class Main {
 		}
 		trace("DropItemInWaterpit");
 	}
+
+	var bookburntimer:Int=-1;
 	function DropItemInFirepit(){
 		trace("DropItemInFirepit");
 		if (holding==0){
+			bookburntimer=0;
 		} else if (holding==1){
 
 		}
 		holding=-1;
 	}
 
+	var startwritetimer:Int=0;
 	function StartWriteBook(){
 		statuesad=true;
-		if (bookstate==0){
-			bookstate=1;
-		} else if (bookstate==1){
-			bookstate=2;
-		} else if (bookstate==3){
-			bookstate=0;
-		}
+		cutscene=2;
+		cutscenetimer=0;
+		showbook=true;
+		initbookpause=0;
+		bookframe=5;		
 		trace("StartWriteBook");
 	}
 	function StartStepOnBook(){
 		trace("StartStepOnBook");
+		bookfootprints=true;
+		cutscene=3;
+		cutscenetimer=0;
+		dx=1;
+		px+=2*dx;
 	}
 
+
   function ProcessAction(){
+  	showtext="";  	
   	var tx=Convert.toint(px/cellw);
   	var ty=Convert.toint(py/cellh);
   	if (tx==waterpitx+1 && ty ==waterpity+0){
-  		if (holding>=0&&!waterbook&&!waterbrush){
+  		if (holding==0&&!waterbook&&!waterbrush){
   			DropItemInWaterpit();
   		}
   	}
-  	if (tx==waterpitx+0 && ty ==waterpity+1){
-		StartWaterpitSacrifice();
-  	}
+//  	if (tx==waterpitx+0 && ty ==waterpity+1 && holding==-1){
+//		StartWaterpitSacrifice();
+//  	}
   	if (tx==waterpitx+0 && ty ==waterpity-1){
   		if (waterbook){
   			holding=0;
@@ -418,18 +429,18 @@ class Main {
   			DropItemInFirepit();
   		}
   	}
-  	if (tx==firepitx-0 && ty ==firepity+1){
+  	if (tx==firepitx-0 && ty ==firepity+1 && holding==-1){
 		StartFirepitSacrifice();
   	}
   	if (tx==pedastalx-1 && ty ==pedastaly+0){
-  		if (holding==-1){
+  		if (holding==-1 && (pedastalbook||pedastalbrush)) {
   			if (pedastalbook){
   				holding=0;
+  				statuesad=true;
   				pedastalbook=false;
   			} 
   			if (pedastalbrush){
   				holding=1;
-  				statuesad=true;
   				pedastalbrush=false;
   			}
   		}
@@ -459,8 +470,8 @@ class Main {
   		}
   	}
 
-  	if (tx==brushx-0 && ty ==brushy+0){
-  		if (floorbook && !bookfootprints){
+  	if (tx==brushx-1 && ty ==brushy+0){
+  		if (floorbook && !bookfootprints ){
   			StartStepOnBook();
   		}
   	}
@@ -475,7 +486,7 @@ class Main {
 	  			floorbrush=false;
 	  		}
 	  	}
-  	}
+  	}  
   	if (tx==brushx-0 && ty ==brushy-1){
   		if (holding>=0 && !floorbook &&!floorbrush){
   			if (holding==0){
@@ -487,6 +498,11 @@ class Main {
   				holding=-1;
   			}
   		}
+  	}
+  	if (tx==exitx&& (ty==exity||ty==exity+1) ){
+  		dy=1;
+  		py+=2*dy;
+  		ty++;
   	}
   	if (tx==keyx+0 && ty==keyy+1){
   		if (!haskey){
@@ -500,7 +516,7 @@ class Main {
   		trace("unlock door");
   	}
   }
-
+  var finished:Bool=false;
   function update() {  	
   	t++;
   	var tx=Convert.toint(px/cellw);
@@ -522,47 +538,76 @@ class Main {
   	if (px%cellw==0&&(py%cellh==0||py%cellh==1)){
   		if (cutscene==-1){
 	  		ProcessAction();
-	  		if (Input.pressed(Key.UP)){
-	  			dy=-1;
-	  			if (checkCollision(tx,--ty)){
-	  				ty++;
-	  			}
-	  		}
-	  		if (Input.pressed(Key.DOWN)){
-	  			dy=1;
-	  			if (checkCollision(tx,++ty)){
-	  				ty--;
-	  			}
-	  		}
-	  		if (Input.pressed(Key.LEFT)){
-	  			dx=-1;
-	  			if (checkCollision(--tx,ty)){
-	  				tx++;
-	  			}
-	  		}
-	  		if (Input.pressed(Key.RIGHT)){
-	  			dx=1;
-	  			if (checkCollision(++tx,ty)){
-	  				tx--;
-					}
+	  		if (cutscene==-1){
+		  		if (Input.pressed(Key.UP)){
+		  			dy=-1;
+		  			if (checkCollision(tx,--ty)){
+		  				ty++;
+		  			}
+		  		}
+		  		if (Input.pressed(Key.DOWN)){
+		  			dy=1;
+		  			if (checkCollision(tx,++ty)){
+		  				ty--;
+		  			}
+		  		}
+		  		if (Input.pressed(Key.LEFT)){
+		  			dx=-1;
+		  			if (checkCollision(--tx,ty)){
+		  				tx++;
+		  			}
+		  		}
+		  		if (Input.pressed(Key.RIGHT)){
+		  			dx=1;
+		  			if (checkCollision(++tx,ty)){
+		  				tx--;
+						}
+				}
 			}
 		} else if (cutscene==0){
+				trace("X");
 			if (cutscenetimer==0){
+				trace("A");
 				dy=-1;
-				py-=dy;
-				cutscenetimer++;
-			} else if (cutscenetimer==1){
+				py+=2*dy;
+				ty--;
+				cutscenetimer++;			
+			} else {
+				trace("C");
 				cutscene=-1;
 			}
 		}  else if (cutscene==1){
 			if (cutscenetimer==0){
 				dy=-1;
-				py-=dy;
+				py+=2*dy;
 				cutscenetimer++;
 			} else if (cutscenetimer>0){
+				dy=0;
 				
 			}
-		} 	  	
+		} else if (cutscene==2){
+			cutscenetimer++;
+			bookframe=100;
+			if (cutscenetimer==20){					
+				if (bookstate==0){
+					bookstate=1;
+				} else if (bookstate==1){
+					bookstate=2;
+				} else if (bookstate==3){
+					bookstate=0;
+				}
+			}
+			if (cutscenetimer>30){
+				cutscene=-1;
+			}
+		} else if (cutscene==3){
+			if (cutscenetimer==0){
+				dx=-1;
+				px+=2*dy;
+				cutscenetimer++;
+				cutscene=-1;
+			} 
+		}  	
   	}  
   	if (dx!=0&&dy!=0){
   		cutscene=-1;
@@ -600,7 +645,7 @@ class Main {
   		Gfx.drawimage((doorx)*cellw,(doory+1)*cellh+offy,"icon_unlock");  		
   	}
   	if (holding>=0){  		
-  		if (!waterbook&&!waterbrush){
+  		if (!waterbook&&!waterbrush &&holding==0){
   			Gfx.drawimage((waterpitx+1)*cellw,(waterpity)*cellh+offy,"icon_drop");
   		}
   		Gfx.drawimage((firepitx-1)*cellw,(firepity)*cellh+offy,"icon_drop");
@@ -610,7 +655,7 @@ class Main {
   	}
  
 
-  	if (holding==-1){
+  	if (holding==-1&&(pedastalbook||pedastalbrush)){
   		Gfx.drawimage((pedastalx-1)*cellw,(pedastaly)*cellh+offy,"icon_take");
   	}
 
@@ -622,12 +667,18 @@ class Main {
   		}
   	}
 
+
   	if (pedastalbook){
   		Gfx.drawimage((pedastalx)*cellw,(pedastaly+1)*cellh+offy,"icon_read");
   	}
 
-	Gfx.drawimage((waterpitx)*cellw,(waterpity+1)*cellh+offy,"icon_steps");
-	Gfx.drawimage((firepitx)*cellw,(firepity+1)*cellh+offy,"icon_steps");
+  	if (!waterbook&&!waterbrush&&holding==-1){
+		//Gfx.drawimage((waterpitx)*cellw,(waterpity+1)*cellh+offy,"icon_steps");
+	}
+
+	if (holding==-1){
+		Gfx.drawimage((firepitx)*cellw,(firepity+1)*cellh+offy,"icon_steps");
+	}
 
   	if (floorbook&&!bookfootprints){
   		Gfx.drawimage((brushx-1)*cellw,(brushy)*cellh+offy,"icon_steps");
@@ -653,11 +704,26 @@ class Main {
   		Gfx.drawimage(85,77+offy,"waterpit2");  		
   		Gfx.drawimage(141+2*28,71+offy,"firepit2");
   	}
+
+	if (bookburntimer>=0){
+  		var bookburnspeed = 10;
+  		bookburntimer++;
+  		var f = Convert.toint(bookburntimer/bookburnspeed);
+  		if (f<9){
+			Gfx.drawimage(122+3*28,107+7-19*2+offy,"bookburn/book_burn_"+f);
+  		} else {
+  			bookburntimer=-1;
+  		}
+  	}
+
   	if (frame==0){
   		if (cutscene==1&&cutscenetimer>0){
-  			Gfx.drawimage(px+poffsetx,py+poffsety+offy,"burn/player_burn_"+(cutscenetimer+1));
-  			if (cutscenetimer<17){
+  			var burnanimspeed=10;
+  			Gfx.drawimage(px+poffsetx-5,py+poffsety+offy-5,"burn/player_burn_"+Convert.toint((cutscenetimer+1)/burnanimspeed));
+  			if (cutscenetimer<16*burnanimspeed){
   				cutscenetimer++;
+  			} else {
+  				showtext="I am more than what you hate. Accept me, God!";
   			}
   		} else {
   			Gfx.drawimage(px+poffsetx,py+poffsety+offy,"player");
@@ -670,6 +736,9 @@ class Main {
   		} 
 		if (holding==1){
 			Gfx.drawimage(px+9+poffsetx,py+1+poffsety+offy,"brush");
+		}
+		if (haskey&&!unlocked){
+			Gfx.drawimage(px+poffsetx,py+1+poffsety+offy,"key");			
 		}
 
   	if (pedastalbook){
@@ -685,8 +754,9 @@ class Main {
   		Gfx.drawimage(179+28*2,134+1*19+offy,"brush");
 	}
   	if (waterbook){
-		if (bookanimtimer<=9){
-			Gfx.drawimage(122-1*28,107+7-19*2+offy,"bookanim_"+bookanimtimer);
+  		var bookanimspeed=5;
+		if (bookanimtimer<=bookanimspeed*9){
+			Gfx.drawimage(122-1*28,107+7-19*2+offy,"bookanim_"+Convert.toint(bookanimtimer/bookanimspeed));
 			bookanimtimer++;		
 		} else {
 				Gfx.drawimage(122-1*28,107+7-19*2+offy,"smallbook");

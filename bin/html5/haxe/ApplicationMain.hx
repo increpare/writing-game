@@ -326,6 +326,10 @@ class ApplicationMain {
 		types.push (lime.Assets.AssetType.IMAGE);
 		
 		
+		urls.push ("data/graphics/icon_talk.png");
+		types.push (lime.Assets.AssetType.IMAGE);
+		
+		
 		urls.push ("data/graphics/icon_unlock.png");
 		types.push (lime.Assets.AssetType.IMAGE);
 		
@@ -427,13 +431,13 @@ class ApplicationMain {
 		
 		config = {
 			
-			build: "204",
-			company: "Your name here",
+			build: "274",
+			company: "increpare",
 			file: "drawingimages",
 			fps: 60,
-			name: "Drawing Images",
+			name: "writing",
 			orientation: "landscape",
-			packageName: "com.haxegon.drawingimages",
+			packageName: "com.increpare.writing",
 			version: "1.0.0",
 			windows: [
 				
@@ -449,7 +453,7 @@ class ApplicationMain {
 					parameters: "{}",
 					resizable: true,
 					stencilBuffer: true,
-					title: "Drawing Images",
+					title: "writing",
 					vsync: true,
 					width: 768,
 					x: null,
